@@ -1,0 +1,234 @@
+:root {
+    --color-primary: #ff7315;
+    --color-light-grey: #f4f4f4;
+    --color-dark-grey: #3a3535;
+    --color-dark-black: #232020
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+/*********************** Fonts *******************/
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif;
+*/
+/********************************     Base      ****************************/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+    /*this is so that 1rem = 10px  10px/16px = 62.5%  16px is the browser default*/
+}
+
+body {
+    background-color: var(--color-light-grey);
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Pacifico', cursive;
+    color: var(--color-light-grey);
+    line-height: 2;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-dark-grey);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    color: var(--color-dark-grey);
+    font-size: 2rem;
+    margin-bottom: 2rem;}
+
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    color: var(--color-light-grey);
+    font-weight: 300;
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--color-dark-black)
+}
+
+hr {
+    border: 5px var(--color-dark-grey);
+    border-style: none;
+    border-top-style: dotted;
+    width: 5%;
+    margin: 100px auto;
+}
+
+/********************************     Header      ****************************/
+
+.top_container {
+
+    background-image: url(img/space-background.jpg);
+    background-position: fit;
+    background-attachment: fixed;
+    margin-bottom: 4rem;
+    padding: 34rem 0 33rem;
+    position: relative;
+    
+    
+}
+
+
+/********************************     Profile      ****************************/
+
+
+.profile__img {
+    width: 20rem;
+    border-radius: 60%;
+    margin-bottom: 3rem;
+}
+
+.intro {
+    line-height: 2;
+    margin-top: 1rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.7rem;
+}
+
+
+
+
+
+
+/********************************  Skills Section*   **************************/
+
+.skills {padding-top: 2rem;}
+
+.skill-row {
+    width: 50%;
+    margin: 10rem auto 10rem auto;
+    text-align: left;
+    line-height: 2;
+    padding-bottom: 4rem;
+
+}
+
+.skill__img {
+    width: 25%;
+    
+}
+
+.skill__img--1 {
+    float: left;
+    margin-right: 3rem;
+}
+
+.skill__img--2 {
+    float: right;
+    margin-left: 3rem;
+}
+
+/********************************  Contact Me Section*   **************************/
+
+.contact-me {
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact_message {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*
+.btn {
+    display: block;
+    width: 10%;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(to bottom, var(--color-primary), rgb(202, 101, 5));
+    margin: 5rem auto 3rem auto;
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5%;
+}
+
+
+.btn:hover,
+.btn:active {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+*/
+/********************************  Footer Section*   **************************/
+
+
+.bottom-container {
+    background-color: var(--color-dark-grey);
+    padding-top: 2rem;
+    color: var(--color-light-grey);
+    height: 15rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--color-light-grey);
+    font-size: 1.7rem;
+    margin-right: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    color: var(--color-primary);
+}
+
+.copy_right {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    color: var(--color-light-grey);
+}
+
+.credit {
+    font-size: 1rem;
+    color: var(--color-light-grey);
+    background-color: var(--color-dark-grey);
+    margin-bottom: 0;
+}
+
+.credit-link {
+    text-decoration: none;
+    color: var(--color-light-grey);
+}
+
+
+
+
+
+
+
+
+/*
+.middle_container {
+    background-color: red;
+    height: 20rem;
+    width: 20rem;
+}
+
+.bottom_container {
+    background-color: blue;
+    height: 20rem;
+    width: 20rem;
+}
+*/
