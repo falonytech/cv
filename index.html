@@ -1,82 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="img/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Lora|Pacifico&display=swap" rel="stylesheet">
-
-  <!-----------------------------Style Sheets---------------------------------------------->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <title>Nicholas Falony</title>
-</head>
-<body>
-
-    <!-------------------------------------------------Header-------------------------------------------------------------------->
-    <div class="top_container">
-      
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
         
-        <h1>I'm Nicholas</h1>
-        <h4>I'm a Leader & Web Designer</h4>
+        <link rel="stylesheet" href="css/style.css">
         
-    </div>
+        
+        <title>Falony Tech</title>
+    </head>
 
-    <!-------------------------------------------------Profile & Skills-------------------------------------------------------------------->
-    <div class="middle-container">
+	<body class="container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+		<header class="header">
+            <a class="header__link" href="index.html">
+                <div class="header__title">
+                    <h1>FalonyTech</h1>
+                </div>
+            </a>
 
-    
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li ><a href="index.html" class="actv">Home</a></li>
+                    <li><a href="blog.html">Blog Posts</a></li>
+                    <li><a href="distro.html">Distro</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="https://falonytech.github.io/cv/">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <div class="profile">
-          <img class="profile__img" src="img/nick2.jpg" alt="profile photo">
-          <h2>Hello</h2>
-          <p class="intro">With over 13 years of experience in leadership, I have a proven trackrecord of leading teams in a customer service environment, including 
-            call centers and retail store environments. I believe in a servant leadership style; my role is to empower my teams to do their best, and motivate them 
-            to give 100% of their effort and dedication.
-          </p>
-          <p class="intro">I have experience leading teams in Workforce Management and Data Reporting. I have built reporting structures, driven reporting on workforce and 
-            call center data to support operations, performance management, and implemented Tableau dashboard reporting for enterprise wide reporting.
-          </p>
-          <p class="intro">For development, I am learning front-end Web Development. I have experience in HTML5, CSS3, JavaScript, and SASS/SCSS. I am working towards becoming more knowledgeable 
-            about several frameworks, including Bootstrap and React.js.</p>
-        </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills</h2>
-          <div class="skill-row">
-            <img class="skill__img skill__img--1" src="img/networking.png" alt="leadership icon">
-            <h3>Leadership & Data Analytics</h3>
-            <p>Leading teams, developing people, building processes, project management, workforce management, data analytics and trend analysis, Excel analytics, Tableau</p>
-          </div>
-          <div class="skill-row">
-            <img class="skill__img skill__img--2" src="img/coding_laptop.png" alt="coding icon">
-            <h3>Development & IT</h3>
-            <p>HTML5, CSS3, SCSS/SASS, Bootstrap, JavaScript, Bash scripting, Linux system administration </p>
-          </div>
-        </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>Please reach out if you would like to get in contact with me.</h3>
-          <a class="btn btn-dark btn-lg" href="mailto:falonyn@gmail.com">CONTACT ME</a>
-        </div>
-      </div>
-      
-      
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/nicholas-falony-8329126/">LinkedIn</a>
-        <a class="footer-link" href="https://www.nicholasfalony.com">Website</a>
-       
-        <p class="copy_right">© 2020 Falony.</p>
-        <p class="credit">Icons made by <a href="https://www.flaticon.com/authors/smashicons" class="credit-link" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" class="credit-link" title="Flaticon"> www.flaticon.com</a></p>
-      </div>
-    
-</body>
+
+        <section class="blog-head">
+            <div class="blog-head__title">
+                <h2 class="heading--2  blog-head__heading">Latest Insights and Reviews</h2>
+            </div>
+        </section>
+
+<!---------------------------------BLOG POST SECTION-------------------------------------------------------------------------------------------------------->
+        <section class="blog">
+
+            <div class="blog__post">   
+                <a href="kinesis2.html" class="blog__link">
+                    <img src="images/kinsesis.jpg" alt="Kinesis Advantage 2" class="blog__img">
+                </a>
+                
+                <div class="blog__content">
+                    <a href="kinesis2.html" class="blog__link">
+                        <h3 class="heading--3 blog__title">Kinesis Advantage 2</h3>
+                    
+                        <h5 class="heading--5 blog__date">February 25, 2020</h5>
+                        <p class="blog__preview">As someone that has used an ergonomic keyboard for 17 years, this is a very different experience, but that is not a bad thing. While I like this keyboard for general typing, 
+                            it has some drawbacks if you are used to a normal keyboard. I have been using this as my primary work keyboard for almost a year, and it really helps.</p>
+                    </a>
+                </div> 
+                
+            </div> 
+            
+            <div class="blog__post">   
+                    <a href="ipad_9.7.html" class="blog__link">
+                        <img src="images/iPad_personal.jpg" alt="iPad" class="blog__img">
+                    </a>
+                <div class="blog__content">
+                    <a href="ipad_9.7.html" class="blog__link">
+                        <h3 class="heading--3 blog__title">iPad 9.7" 2018</h3>
+                        <h5 class="heading--5 blog__date">February 25, 2020</h5>
+                        <p class="blog__preview">The iPad 9.7" 2018 is a great device and worth the money, as long as you have simple needs or do not plan on using it as the main PC, then you are good. I purchased one
+                            of these recently for the main purpose of being able to take notes for work. While I have some major issues with the way that Apple handles their hardware and the lock-in that they push for their
+                            ecosystem, the limited use that I have for this device allows my to appreciate what a solid device that it is without being sucked into the lock-in effect. 
+                        </p>
+                    </a>
+                </div> 
+            </div> 
+
+            <div class="blog__post">   
+                <a href="kindle_10.html" class="blog__link">
+                    <img src="images/kindle_fire_10_comparison.jpg" alt="Kindle Fire 10" class="blog__img blog__img--kindle">
+                </a>
+                <div class="blog__content">
+                    <a href="kindle_10.html" class="blog__link">
+                        <h3 class="heading--3 blog__title">Kindle fire HD 10</h3>
+                        <h5 class="heading--5 blog__date">April 5, 2019</h5>
+                        <p class="blog__preview">I recently was in the market for a new tablet. I was previously using the Kindle Fire HD 8, but this tablet was showing 
+                            its age and was never the fastest or most powerful tablet. I was stuck making a choice between the Apple iPad 9.7 2018 and the Kindle Fire HD 10. 
+                            From the title of this article, you can already tell which one I went with. The price was the driving factor in the decision. While both were 
+                            on sale, the Kindle Fire HD 10’s price could not be touched by the iPad.</p>
+                    </a>
+                </div> 
+            </div> 
+
+            <div class="blog__post">   
+                <a href="thinkpad.html" class="blog__link">
+                    <img src="images/thinkpad_openandon.jpg" alt="thinkpad" class="blog__img">
+                </a>
+                <div class="blog__content">
+                    <a href="thinkpad.html" class="blog__link">
+                        <h3 class="heading--3 blog__title">ThinkPad X1 Carbon 6th Gen</h3>
+                        <h5 class="heading--5 blog__date">March 16, 2019</h5>
+                        <p class="blog__preview">I just purchased a ThinkPad X1 Carbon and this is my first impression of this business class laptop. It is running Pop_OS! 
+                            Linux instead of Windows, which it came with. This will be a review strictly on its performance with Linux.</p>
+                    </a>
+                </div> 
+            </div> 
+
+            
+                
+        </section>
+
+<!---------------------------------NEW DISTRO SECTION-------------------------------------------------------------------------------------------------------->
+        <section class="distro">
+                <div class="distro__header">
+                    <h2 class="distro__title">Reviews of Operating Systems</h2>
+                    <p class="distro__expl">Sometimes I like to try new Linux distributions or a new viersion of MacOS or Windows 10. Here is where I will review them.</p>
+                    <a class="distro__button" href="solus4.1.html">OS Hop!</a>
+                </div>
+
+                <div class="distro__card distro__card--1">
+                    <a href="#" class="blog__link"><img src="images/eoan_ermine.png" alt="Arch Linux" class="distro__img"></a>
+                    <a href="#" class="blog__link"><h3 class="heading--3 distro__card--title">Ubuntu 19.10 Eoan Ermine</h3></a>
+                    <h5 class="heading--5">October 27, 2019</h5>
+                    <p class="distro__preview">Canonical recently released the latest version of its Ubuntu operating system. I have been using a verison of this OS for nearly 14 years. My main computer just received the update and I will be providing my impressions on it shortly.</p>
+
+                </div>
+
+                <div class="distro__card distro__card--2">
+                    <a href="arch_distro.html" class="blog__link"><img src="images/arch_linux_menu.png" alt="Arch Linux" class="distro__img"></a>
+                    <a href="arch_distro.html" class="blog__link"> <h3 class="heading--3 distro__card--title">Arch Linux</h3></a>
+                    <h5 class="heading--5">March 19, 2019</h5>
+                    <p class="distro__preview">Recently I finally decided to take the plunge and attempt to install Arch Linux. It took me two tries, with a walk-through video, and then detecting what was done incorrectly in the video and correcting that the second time through, but I finally I was successful. I would like to talk about my first impressions in completing the install and using the system.          </p>
+                </div>
+
+                <div class="distro__card distro__card--3">
+                    <a href="kubuntu_18.10.html" class="blog__link"><img src="images/kubuntu01.png" alt="Arch Linux" class="distro__img"></a>
+                    <a href="kubuntu_18.10.html" class="blog__link"><h3 class="heading--3 distro__card--title">Kubuntu 18.10</h3></a>
+                    <h5 class="heading--5">February 19, 2019</h5>
+                    <p class="distro__preview">With the completion of my desktop PC upgrade complete, I decided to take the opportunity to install Kubuntu rather than my normal Ubuntu install. Here are my initial thoughts.</p>
+                </div>
+
+        </section>
+
+<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+		<footer class="footer">
+                <div class="footer__contact">
+                    <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                    <a href="https://falonytech.github.io/cv/" class="footer__contact--link">Personal Site</a>
+                </div>
+                <br>
+                <div class="row">
+                    <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+                </div>
+            
+        </footer>
+
+
+
+	</body>
+
+
 </html>
