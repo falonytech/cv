@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="icon" href="images/favicon.ico">
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/style.css">
@@ -14,23 +14,42 @@
 
 	<body class="blog--container">
 <!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
-		<header class="header">
-            <a class="header__link" href="index.html">
-                <div class="header__title">
-                    <h1>FalonyTech</h1>
-                </div>
-            </a>
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
 
-            <nav class="header__nav">
-                    <ul class="header__list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog Posts</a></li>
-                        <li><a href="distro.html">Distro</a></li>
-                        <li><a href="aboutme.html">About Me</a></li>
-                        <li><a href="https:\\nicholasfalony.com">Contact</a></li>
-                    </ul>
-            </nav>
-        </header>
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html" class="actv">Home</a></li>
+            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="distro.html">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <input type="checkbox" class="mobile__nav--checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="mobile__nav--button">
+            <span class="mobile__nav--icon">&nbsp;</span>
+        </label>
+
+        <div class="mobile__nav--background">&nbsp;</div>
+       
+            <ul class="mobile__nav--list">
+                <li class="mobile__nav--item"><a href="index.html" class="mobile__nav--link">Home</a></li>
+                <li class="mobile__nav--item"><a href="blog.html" class="mobile__nav--link">Blog Posts</a></li>
+                <li class="mobile__nav--item"><a href="distro.html" class="mobile__nav--link">Distro</a></li>
+                <li class="mobile__nav--item"><a href="aboutme.html" class="mobile__nav--link">About Me</a></li>
+                <li class="mobile__nav--item"><a href="https:\\nicholasfalony.com" class="mobile__nav--link">Contact</a></li>
+            </ul>
+        
+    </nav>
+</header>
 
 
 <!---------------------------------POST-------------------------------------------------------------------------------------------------------->
@@ -42,20 +61,24 @@
             </div>
 
             <div class="post__content">
-                <img src="images/kindle_fire_10_comparison.jpg" alt="kindle 10 comparison" class="post__img">
-                <p class="post__text post__text--right">I recently was in the market for a new tablet. I was previously using the Kindle Fire HD 8, but this tablet was showing its age and was never the fastest or most powerful tablet. I was stuck making a choice between the Apple iPad 9.7 2018 and the Kindle Fire HD 10. From the title of this article, you can already tell which one I went with. The price was the driving factor in the decision. While both were on sale, the Kindle Fire HD 10’s price could not be touched by the iPad.</p>
-                <p class="post__text post__text--right">First, the difference between the 8 and the 10 seems small at first glance, but all of the minor improvements add up. The Kindle Fire HD 10 comes with a full 2Gb of RAM rather than just 1.5Gb of RAM. The processor is also slightly faster at 1.8GHz on the performance cores and 1.4GHz on the slower cores. The base storage on this model is 32Gb rather than 16Gb.</p>
-                <p class="post__text post__text--full">While none of these changes by themselves seems like a lot, they all add up to an all-around better experience. Where the Kindle Fire HD 8 would lag while waking, loading apps, and moving between screens, the Kindle Fire HD 10 does not do that. The faster processor and additional RAM really help here. Do not expect this to measure up to the more powerful tablets out there, but it gets the job done well, and without the frustration I always had with the Kindle Fire HD 8 and Kindle Fire HD 7.</p>
-                <p class="post__text post__text--full">This tablet will handle the basic tasks which I would want to use it for, surfing the web and streaming media. I have not attempted to push it for playing games, but that is not what I plan o use it for. I am sure it will work well for reading books with the Kindle app, but the size does not make it ideal for that on a longer reading run.</p>
-                <p class="post__text post__text--full">The screen on the Kindle Fire HD 10 is a great selling point. For the price, getting a 10-inch screen with a 1920 x 1200 resolution and 224ppi is excellent.1 The colour gamut is just over 100% sRGB, which is better than I saw for many other tablets at this price range.1 This tablet also offers just over 400nits of brightness.1 This is far better than the Kindle Fire HD 8 and 7, both of which I own.</p>
-                <p class="post__text post__text--full">I primarily wanted a larger tablet to stream Hulu and YouTube while cooking in the kitchen, and this is great for it. The larger screen makes it much better for viewing the content while moving around the kitchen, so it fits the bill perfectly. The higher pixel density and better colour add to an all-around better experience.</p>
-                <p class="post__text post__text--full">This is a low point for me and will continue to be that until Amazon can get its act together. Honestly, this is one of the main reasons I would have preferred the iPad, and I am not a fan at all of Apple’s practices or walled garden.</p>
-                <p class="post__text post__text--full">Amazon’s custom OS, Fire OS, is still based on Android 5.0 Lollipop. Android itself is currently on version 9, with 10 expected mid-2019. Perhaps upgrading to a newer version would mean that they would need better hardware than what they put in this tablet, but at a certain point, the tablet is getting left behind. Phones are far more popular, and I would guess most phones are on a newer version of Android than 5.0, which mean developers would be developing for that.</p>
-                <p class="post__text post__text--full">The Kindle Fire HD 10 comes with its regular host of Amazon default apps, which are sub-par to what you would find on a Samsung or iPad. They get the job done, but I did what I usually do: drag most of them into a single folder so I can ignore them most of the time. The app store is filled with a lot of useless apps, mostly games from what I see. I usually have to search for apps I want because they are not pushed to the top, and good luck finding suitable replacements for things like mail and a different browser. This is one area that I like about it, you can install apps downloaded from the web. I installed FireFox web browser, which is much better than silk.</p>
-                <p class="post__text post__text--full">Opening up this tablet to loading Google Play Services is excellent, but my experience in the past was that it slowed the Kindle Fire HD 8 down to unusable. I would like to see their app store improve though. For what I use this tablet for… I only felt the need to put a different browser on it, and I am good. But I still miss certain Google apps.</p>
-                <p class="post__text post__text--full">The weight of the tablet is good, but not ideal if you are wanting to hold it up for reading over a more extended period. The plastic body feels cheap compared to an iPad, but you know what you are getting when you get this. The buttons all being on the side make this hard to use with a Bluetooth controller I have, which widens to hold the tablet and turn it into a single mobile game unit. The controller presses on the buttons. The cameras are not great, but I really do not see myself using them for anything. It has expandable storage, which is a nice feature, but I don’t see myself using it. The lack of pen support is disappointing, but I am not going to miss it since I never had it on any of my tablets. Speakers are not great, so make sure you have a Bluetooth speaker or headphones. Fortunately, this has a headphone jack.</p>
-                <p class="post__text post__text--full">This is a great, basic tablet. I found it on sale at Amazon for $99, which is a no-brainer price. Add to it I had a gift card, and it was impossible to pass up. I am happy with the purchase and think it is a great value. If you are doing some basics, like browsing the web and streaming shows, it will work perfectly. If you would like a more premium build, pen support, or a good app selection without having to hack the device, look elsewhere.</p>
-        </div>
+                <div class="post__img-container--left">
+                    <img src="images/kindle_fire_10_comparison.jpg" alt="kindle 10 comparison" class="post__img">
+                    <p class="post__img-caption">Kindle Fire 10 HD</p>
+                </div>
+                
+                <p class="post__text">I recently was in the market for a new tablet. I was previously using the Kindle Fire HD 8, but this tablet was showing its age and was never the fastest or most powerful tablet. I was stuck making a choice between the Apple iPad 9.7 2018 and the Kindle Fire HD 10. From the title of this article, you can already tell which one I went with. The price was the driving factor in the decision. While both were on sale, the Kindle Fire HD 10’s price could not be touched by the iPad.</p>
+                <p class="post__text">First, the difference between the 8 and the 10 seems small at first glance, but all of the minor improvements add up. The Kindle Fire HD 10 comes with a full 2Gb of RAM rather than just 1.5Gb of RAM. The processor is also slightly faster at 1.8GHz on the performance cores and 1.4GHz on the slower cores. The base storage on this model is 32Gb rather than 16Gb.</p>
+                <p class="post__text">While none of these changes by themselves seems like a lot, they all add up to an all-around better experience. Where the Kindle Fire HD 8 would lag while waking, loading apps, and moving between screens, the Kindle Fire HD 10 does not do that. The faster processor and additional RAM really help here. Do not expect this to measure up to the more powerful tablets out there, but it gets the job done well, and without the frustration I always had with the Kindle Fire HD 8 and Kindle Fire HD 7.</p>
+                <p class="post__text">This tablet will handle the basic tasks which I would want to use it for, surfing the web and streaming media. I have not attempted to push it for playing games, but that is not what I plan o use it for. I am sure it will work well for reading books with the Kindle app, but the size does not make it ideal for that on a longer reading run.</p>
+                <p class="post__text">The screen on the Kindle Fire HD 10 is a great selling point. For the price, getting a 10-inch screen with a 1920 x 1200 resolution and 224ppi is excellent.1 The colour gamut is just over 100% sRGB, which is better than I saw for many other tablets at this price range.1 This tablet also offers just over 400nits of brightness.1 This is far better than the Kindle Fire HD 8 and 7, both of which I own.</p>
+                <p class="post__text">I primarily wanted a larger tablet to stream Hulu and YouTube while cooking in the kitchen, and this is great for it. The larger screen makes it much better for viewing the content while moving around the kitchen, so it fits the bill perfectly. The higher pixel density and better colour add to an all-around better experience.</p>
+                <p class="post__text">This is a low point for me and will continue to be that until Amazon can get its act together. Honestly, this is one of the main reasons I would have preferred the iPad, and I am not a fan at all of Apple’s practices or walled garden.</p>
+                <p class="post__text">Amazon’s custom OS, Fire OS, is still based on Android 5.0 Lollipop. Android itself is currently on version 9, with 10 expected mid-2019. Perhaps upgrading to a newer version would mean that they would need better hardware than what they put in this tablet, but at a certain point, the tablet is getting left behind. Phones are far more popular, and I would guess most phones are on a newer version of Android than 5.0, which mean developers would be developing for that.</p>
+                <p class="post__text">The Kindle Fire HD 10 comes with its regular host of Amazon default apps, which are sub-par to what you would find on a Samsung or iPad. They get the job done, but I did what I usually do: drag most of them into a single folder so I can ignore them most of the time. The app store is filled with a lot of useless apps, mostly games from what I see. I usually have to search for apps I want because they are not pushed to the top, and good luck finding suitable replacements for things like mail and a different browser. This is one area that I like about it, you can install apps downloaded from the web. I installed FireFox web browser, which is much better than silk.</p>
+                <p class="post__text">Opening up this tablet to loading Google Play Services is excellent, but my experience in the past was that it slowed the Kindle Fire HD 8 down to unusable. I would like to see their app store improve though. For what I use this tablet for… I only felt the need to put a different browser on it, and I am good. But I still miss certain Google apps.</p>
+                <p class="post__text">The weight of the tablet is good, but not ideal if you are wanting to hold it up for reading over a more extended period. The plastic body feels cheap compared to an iPad, but you know what you are getting when you get this. The buttons all being on the side make this hard to use with a Bluetooth controller I have, which widens to hold the tablet and turn it into a single mobile game unit. The controller presses on the buttons. The cameras are not great, but I really do not see myself using them for anything. It has expandable storage, which is a nice feature, but I don’t see myself using it. The lack of pen support is disappointing, but I am not going to miss it since I never had it on any of my tablets. Speakers are not great, so make sure you have a Bluetooth speaker or headphones. Fortunately, this has a headphone jack.</p>
+                <p class="post__text">This is a great, basic tablet. I found it on sale at Amazon for $99, which is a no-brainer price. Add to it I had a gift card, and it was impossible to pass up. I am happy with the purchase and think it is a great value. If you are doing some basics, like browsing the web and streaming shows, it will work perfectly. If you would like a more premium build, pen support, or a good app selection without having to hack the device, look elsewhere.</p>
+            </div>
         </section>
 
 <!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->

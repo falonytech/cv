@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <link rel="icon" href="images/favicon.ico">
         <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="css/style.css">
@@ -14,24 +14,42 @@
 
 	<body class="blog--container">
 <!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
-		<header class="header">
-            <a class="header__link" href="index.html">
-                <div class="header__title">
-                    <h1>FalonyTech</h1>
-                </div>
-            </a>
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
 
-            <nav class="header__nav">
-                    <ul class="header__list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="blog.html">Blog Posts</a></li>
-                        <li><a href="distro.html">Distro</a></li>
-                        <li><a href="aboutme.html">About Me</a></li>
-                        <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html" class="actv">Home</a></li>
+            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="distro.html">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
 
-                    </ul>
-            </nav>
-        </header>
+    <nav class="mobile__nav">
+        <input type="checkbox" class="mobile__nav--checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="mobile__nav--button">
+            <span class="mobile__nav--icon">&nbsp;</span>
+        </label>
+
+        <div class="mobile__nav--background">&nbsp;</div>
+       
+            <ul class="mobile__nav--list">
+                <li class="mobile__nav--item"><a href="index.html" class="mobile__nav--link">Home</a></li>
+                <li class="mobile__nav--item"><a href="blog.html" class="mobile__nav--link">Blog Posts</a></li>
+                <li class="mobile__nav--item"><a href="distro.html" class="mobile__nav--link">Distro</a></li>
+                <li class="mobile__nav--item"><a href="aboutme.html" class="mobile__nav--link">About Me</a></li>
+                <li class="mobile__nav--item"><a href="https:\\nicholasfalony.com" class="mobile__nav--link">Contact</a></li>
+            </ul>
+        
+    </nav>
+</header>
 
 
 <!---------------------------------POST-------------------------------------------------------------------------------------------------------->
@@ -43,19 +61,25 @@
             </div>
 
             <div class="post__content">
-                <img src="images/arch_linux_menu.png" alt="hp spectre" class="post__img">
-                <p class="post__text post__text--right">Recently I finally decided to take the plunge and attempt to install Arch Linux. It took me two tries, with a walk-through video, and then detecting what was done incorrectly in the video and correcting that the second time through, but I finally I was successful. I would like to talk about my first impressions in completing the install and using the system.  </p>
-                <p class="post__text post__text--right">First, let me say that the install process for Arch is not nearly as hard as I thought. It is something that will take some technical skill and comfort in the command line, but it is not nearly what I would have thought. The video that I used is https://www.youtube.com/watch?v=4PBqpX0_UOc and it is a great walk-through. Since this was my first time, I knew I would want some guidance. </p>
-                <p class="post__text post__text--full">I went with Gnome as the desktop environment, since it is the one I am most familiar with and did not want to make things too difficult. Right now I am using the Gnome Classic desktop; the laptop that this is installed on is older, with a lower resolution screen, and the Gnome Classic works well. Default Gnome works well on this system. It is fast and easy to use. It looks nice. I haven’t 
+                <div class="post__img-container--left">
+                    <img src="images/arch_linux_menu.png" alt="hp spectre" class="post__img post__img--left">
+                    <p class="post__img-caption">Arch Linux GNOME desktop</p>
+                </div>
+                <p class="post__text">Recently I finally decided to take the plunge and attempt to install Arch Linux. It took me two tries, with a walk-through video, and then detecting what was done incorrectly in the video and correcting that the second time through, but I finally I was successful. I would like to talk about my first impressions in completing the install and using the system.  </p>
+                <p class="post__text">First, let me say that the install process for Arch is not nearly as hard as I thought. It is something that will take some technical skill and comfort in the command line, but it is not nearly what I would have thought. The video that I used is https://www.youtube.com/watch?v=4PBqpX0_UOc and it is a great walk-through. Since this was my first time, I knew I would want some guidance. </p>
+                <p class="post__text">I went with Gnome as the desktop environment, since it is the one I am most familiar with and did not want to make things too difficult. Right now I am using the Gnome Classic desktop; the laptop that this is installed on is older, with a lower resolution screen, and the Gnome Classic works well. Default Gnome works well on this system. It is fast and easy to use. It looks nice. I haven’t 
                     used the default Gnome look too often, usually there is some skin on it. What I don’t like is that some unknown Gnome applications installed and are now appearing in my applications drawer. They look like some utility and are using a default icon. </p>
-                <p class="post__text post__text--full">It has the default Gnome software and then I have installed Firefox, VS Code, Sublime Text, and Libre Office. Installing software on Arch is a little more complicated in almost every instance than if you are on a distribution like Ubuntu, Fedora, Mint, etc.. The Gnome store was installed, but doesn’t populate anything. </p>
-                <p class="post__text post__text--full">Everything that I have installed runs incredibly well. As a matter of fact, the aniations for the Gnome shell run better on this older laptop with Arch than on the HP Spectre x360 and on my desktop under Ubuntu. Even VS Code, and electron app, loads quickly and runs well.</p>
-                
-                <p class="post__text post__text--full">Updating software on Arch is easy, but command line only. This is not the system to use if you don’t want to do a lot with the terminal, as you will be installing all of your software, updating the computer, and installing the system in the first place through command line. </p>
-                <p class="post__text post__text--left">Arch is fine. The system works well, and if I were someone that was willing to put forth the time and effort to work with it every day, I am sure I would be able to get used to it and love it. It is limited in the amount of software that is available by default, and I had some trouble installing the Arch user Repositories and a helper that would allow me to install from there. This 
+                <p class="post__text">It has the default Gnome software and then I have installed Firefox, VS Code, Sublime Text, and Libre Office. Installing software on Arch is a little more complicated in almost every instance than if you are on a distribution like Ubuntu, Fedora, Mint, etc.. The Gnome store was installed, but doesn’t populate anything. </p>
+                <p class="post__text ">Everything that I have installed runs incredibly well. As a matter of fact, the aniations for the Gnome shell run better on this older laptop with Arch than on the HP Spectre x360 and on my desktop under Ubuntu. Even VS Code, and electron app, loads quickly and runs well.</p>
+                <div class="post__img-container--right">
+                    <img src="images/arch_linux_apllications_tray.png" alt="hp spectre" class="post__img post__img--right">
+                    <p class="post__img-caption">Arch Linux GNOME Application Dashboard</p>
+                </div>
+                <p class="post__text">Updating software on Arch is easy, but command line only. This is not the system to use if you don’t want to do a lot with the terminal, as you will be installing all of your software, updating the computer, and installing the system in the first place through command line. </p>
+                <p class="post__text">Arch is fine. The system works well, and if I were someone that was willing to put forth the time and effort to work with it every day, I am sure I would be able to get used to it and love it. It is limited in the amount of software that is available by default, and I had some trouble installing the Arch user Repositories and a helper that would allow me to install from there. This 
                     experience opened my eyes to a hard reality: there are certain parts of working on a computer that I would like thought of for me and automated by the system. I do not want to spend time reading a wiki page about updates to see if they will break anything. I do not want to install a second user repository to get access to a large portion of the tools and software I would like to use on the system. Hats off to those that do, 
                     but I prefer to get the system installed, and begin focusing more on what I am trying to get done on my computer, which is web development, paying bills, web browsing, etc. Arch is just all around more of my time spent getting it set up and maintaining the system, and that is time lost that I could be doing something else. </p>
-                <img src="images/arch_linux_apllications_tray.png" alt="hp spectre" class="post__img--3">
+                
             </div>
         </section>
 
