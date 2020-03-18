@@ -109,86 +109,47 @@ body {
   @media only screen and (max-width: 50em) {
     .mobile__nav {
       display: flex;
-      flex-direction: column; } }
-  .mobile__nav--checkbox {
-    display: none; }
-  .mobile__nav--button {
-    background-color: #e4e4e4;
-    height: 4rem;
-    width: 4rem;
-    position: absolute;
-    border-radius: 50%;
-    top: -1.7rem;
-    right: 2rem;
-    z-index: 2000;
-    text-align: center;
-    cursor: pointer; }
-  .mobile__nav--background {
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -1.5rem;
-    right: 2.3rem;
-    background-image: radial-gradient(#ff7315, #d66112);
-    z-index: 1000;
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-    transition: transform 0.8s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-  .mobile__nav--list {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1500;
-    opacity: 0;
-    width: 0;
-    transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    list-style: none; }
-  .mobile__nav--item {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3rem;
-    color: #fff;
-    font-size: 4rem; }
-  .mobile__nav--link {
-    text-decoration: none;
-    color: #fff; }
-  .mobile__nav--checkbox:checked ~ .mobile__nav--background {
-    transform: scale(90); }
-  .mobile__nav--checkbox:checked ~ .mobile__nav--list {
-    opacity: 1;
-    width: 100%; }
-  .mobile__nav--icon {
-    position: relative;
-    margin-top: 1.9rem;
-    z-index: 2500; }
-    .mobile__nav--icon, .mobile__nav--icon::before, .mobile__nav--icon::after {
-      width: 2rem;
-      height: 2px;
-      background-color: #333;
-      display: inline-block; }
-    .mobile__nav--icon::before, .mobile__nav--icon::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      transition: all .2s; }
-    .mobile__nav--icon::before {
-      top: -.8rem; }
-    .mobile__nav--icon::after {
-      top: .8rem; }
-  .mobile__nav--checkbox:checked + .mobile__nav--button .mobile__nav--icon {
-    background-color: transparent; }
-  .mobile__nav--checkbox:checked + .mobile__nav--button .mobile__nav--icon::after {
-    top: 0;
-    transform: rotate(45deg); }
-  .mobile__nav--checkbox:checked + .mobile__nav--button .mobile__nav--icon::before {
-    top: 0;
-    transform: rotate(135deg); }
+      flex-direction: column;
+      margin-right: 2rem; } }
+
+.dropbtn {
+  background-color: #d66112;
+  border-radius: 3px;
+  color: white;
+  padding: 1.6rem 2rem;
+  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  cursor: pointer; }
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #ff7315; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.dropdown-content a {
+  color: black;
+  padding: 20px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  display: block; }
+
+.dropdown a:hover {
+  background-color: #ddd; }
+
+.show {
+  display: block; }
 
 .aboutme--container {
   display: grid;
@@ -262,7 +223,7 @@ body {
       line-height: 2.5rem; }
       @media only screen and (max-width: 62.5em) {
         .aboutme__bio--text {
-          font-size: 1.3rem; } }
+          font-size: 1.5rem; } }
   .aboutme__skills {
     grid-column: 1 / -1;
     margin-bottom: 4rem; }
@@ -289,13 +250,16 @@ body {
           font-size: 1.4rem; } }
       @media only screen and (max-width: 50em) {
         .aboutme__skills--list {
-          font-size: 1.1rem; } }
+          font-size: 1.4rem; } }
       @media only screen and (max-width: 37.5em) {
         .aboutme__skills--list {
           flex-direction: column;
           margin-bottom: 1rem; } }
     .aboutme__skills--item {
       margin-right: 1.3rem; }
+      @media only screen and (max-width: 37.5em) {
+        .aboutme__skills--item {
+          margin-bottom: 1.3rem; } }
   .aboutme__hardware {
     grid-column: 1 / -1;
     display: grid;
