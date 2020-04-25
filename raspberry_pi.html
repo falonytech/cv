@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html" class="actv">Blog Posts</a></li>
+            <li><a href="distro.html">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Discover</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+    </nav>
+</header>
+
+
+<!---------------------------------POST---------------------------------------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">Raspberry Pi 4 4gb model</h3>
+                <h5 class="post__title--subhead">April 19, 2020</h5>
+            </div>
+
+            <div class="post__content">
+                <div class="post__img-container--left">
+                    <img src="images/raspberry_pi.jpg" alt="Raspberry Pi 4" class="post__img">
+                    <p class="post__img-caption">Raspberry Pi 4 4gb model Cana Kit</p>
+                </div>
+                
+                <p class="post__text">About two months ago, my Raspberry Pi 4 arrived, and to say the least, I was excited to try it out. I heard some of the stories about 
+                    this thing overheating, especially the model I got with the 4gb of RAM. I heard a lot about <a href="https://flirc.tv/more/raspberry-pi-4-case" class="product-link">Flirc</a> 
+                    cases being a premium look and the <a href="https://www.argon40.com/catalog/product/view/id/52/s/argon-one-raspberry-pi-4-case/" class="product-link">Argon One</a> looked 
+                    to make this feel more like an Intel NUC, but to start, I decided to get the <a href="https://www.canakit.com/raspberry-pi-4-starter-kit.html" class="product-link">Cana Kit</a> for $99.  
+                    Below will be my experience with the hardware, performance and overall satisfaction.</p>
+                    <br>
+                    <br>
+                <h3 class="post__sub-title">Hardware<sup><a href="#1">1</a></sup></h3>
+                <p class="post__text">
+                    <ul class="post__hardware-list">
+                        <li class="post__hardware-list--item">Broadcom BCM2711, Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz</li>
+                        <li class="post__hardware-list--item">4GB LPDDR4-3200 SDRAM </li>
+                        <li class="post__hardware-list--item">2.4 GHz and 5.0 GHz IEEE 802.11ac wireless, Bluetooth 5.0, BLE</li>
+                        <li class="post__hardware-list--item">Gigabit Ethernet</li>
+                        <li class="post__hardware-list--item">2 USB 3.0 ports; 2 USB 2.0 ports.</li>
+                        <li class="post__hardware-list--item">Raspberry Pi standard 40 pin GPIO header (fully backwards compatible with previous boards)</li>
+                        <li class="post__hardware-list--item">2 × micro-HDMI ports (up to 4kp60 supported)</li>
+                        <li class="post__hardware-list--item">2-lane MIPI DSI display port</li>
+                        <li class="post__hardware-list--item">2-lane MIPI CSI camera port</li>
+                        <li class="post__hardware-list--item">4-pole stereo audio and composite video port</li>
+                        <li class="post__hardware-list--item">H.265 (4kp60 decode), H264 (1080p60 decode, 1080p30 encode)</li>
+                        <li class="post__hardware-list--item">OpenGL ES 3.0 graphics</li>
+                        <li class="post__hardware-list--item">Micro-SD card slot for loading operating system and data storage</li>
+                        <li class="post__hardware-list--item">5V DC via USB-C connector (minimum 3A*)</li>
+                        <li class="post__hardware-list--item">5V DC via GPIO header (minimum 3A*)</li>
+                        <li class="post__hardware-list--item">Power over Ethernet (PoE) enabled (requires separate PoE HAT)</li>
+                        <li class="post__hardware-list--item">Operating temperature: 0 – 50 degrees C ambient</li>
+                    </ul>
+                </p>
+                <br>
+                <p class="post__text">Overall, I am very happy with the kit that I got. Getting one of the other cases would just be to give it a more premium look and feel. 
+                    One thing that I am a little disappointed with is the weight. Because it is so light, the cables need to be positioned in a very particular way so the case 
+                    will lay flat on a desk. I particularly see this when trying to hook up to my TV. Perhaps I can look into mounting the device, but that will bring up the 
+                    question of where the power button will end up.</p>
+                
+                <h3 class="post__sub-title">Manjaro on ARM</h3>
+                <p class="post__text">I tried Manjaro on ARM before even trying the original OS. I heard a lot of great things about Manjaro on ARM and wanted to see what it 
+                    is like for myself. I downloaded the XFCE version and flashed to a 32GB micro-SD card that I purchased along with it.</p>
+                <p class="post__text">The installation was great! I was a little thrown off by how the install went, since I am used to using a live-USB to install Linux. With 
+                    this, I flash it onto the SD card, and then when I boot, the install begins and installs to the SD card it booted from. But from there, the install was very 
+                    straight forward. Once it was installed, I was up and running, with everything working, including the WiFi.</p>
+                <p class="post__text">Manjaro on ARM comes with a host of included software. Firefox is the preinstalled browser, and this is no surprise. Since it is XFCE, the 
+                    file manager is Thunar; the terminal is Xfce Terminal. SMPlayer is the media player, htop for performance monitoring, and Libre Office.</p>
+                <p class="post__text">There is a software store included and it is pretty easy to use with a good amount of applications there. However, there was not one of the 
+                    text editors that I normally look for. I have not attempted to install Node.js and do some web development on it, but I do not think that it is something that 
+                    I would use it for. I plan on looking at this further when I get my Pinebook Pro using Manjaro ARM. </p>
+                <p class="post__text">I have not attempted to use the AUR to download anything either, so I cannot speak to what is available there. </p>
+                
+                <div class="post__img-container--right">
+                    <img src="images/Manjaro_ARM_1.png" alt="Raspberry Pi 4" class="post__img">
+                    <p class="post__img-caption">Manjaro on ARM Theme Issues</p>
+                </div>
+
+                <p class="post__text">Performance was a bit of a surprise. Starting off with the good, applications launched slow, but not too slow. The OS is running off an SD 
+                    card, so I didn’t expect a speed demon here. Moving windows around was fine, and menus were responsive. I noticed a few major drops in performance. First, when 
+                    I update the system, everything moves slow, especially launch anything else. Second, when I plugged in the USB drive to move some screenshots, the mouse cursor 
+                    would not move until the file manager opened showing the contents. This makes me a little nervous for the Pinebook Pro, which is basically the same kind of computer, 
+                    but put inside a laptop.</p>
+                <p class="post__text">One final thing I noticed was around the system theme. Some windows/applications used a nice looking system theme where others used what looked 
+                    like the standard XFCE theme, but in black. Things like this aggravate me as it shows a lack of polish. </p>
+
+                <h3 class="post__sub-title">Raspbian Buster</h3>
+                <p class="post__text">The installation was simple. Pop the SD card in, choose the version of the OS that you want, walk through the installer, and done. The SD card came 
+                    with the kit that I purchased. After this initial install, there were a ton of updates to be applied. I was easily able to connect the Pi to the WiFi and download the 
+                    updates; however the download took a very long time, long enough that I thought it had stalled out and messed up several times.</p>
+                <div class="post__img-container--left">
+                    <img src="images/Raspbian.png" alt="Raspberry Pi 4" class="post__img">
+                    <p class="post__img-caption">Old School Software Center</p>
+                </div>
+                
+                <p class="post__text">Raspbian OS comes with a whole host of preinstalled software, almost to the point where it is over-kill. There is a suite of programming applications, 
+                    Libre Office, VLC for media, Chromium as the default browser, and even Minecraft Pi as a game. </p>
+                <p class="post__text">But with that, the software installing application is more old-school synaptic style. I am not a fan of this, as I found this confusing when I first 
+                    came to Linux. For example, look at the ‘Internet’ section and see all of the odd items in there, related to internet, but not what a typical user is looking for. I need 
+                    to play with it further to see about installing text editors and my typical web development tools, but I am hoping for the best. </p>
+                <p class="post__text">This is a lot better than Manjaro. Raspbian is designed for the Pi, so it is no surprise that it performs best. Opening applications can be a little slow, 
+                    especially when compared with an x86 CPU, but keep in mind that this is running off an SD card, not an SSD. And once applications are running, loading web pages, for instance, 
+                    is fast enough. I would have a hard time using this as a daily driver, but I think my child could use this browse the web and complete a research paper.</p>
+                <p class="post__text">The OS is not much to look at. It looks dated and not in a good way. But it is easy enough to navigate, and gets the job done. I am a little sad that the 
+                    options to customize it out of the box are so limited. It would be nice if one could make it look more modern and personal. But this is a minor thing when one realizes that 
+                    this is a $65 computer. What can one expect?</p>
+
+                <h3 class="post__sub-title">Final Thoughts</h3>
+                <p class="post__text">The Raspberry Pi is a great little computer. I could see using this as a small computer for my child to do some basic school work on, or turning it into a 
+                    retro gaming console. Performance is fine for what it is, but I would not use this as a main machine and have a hard time recommending Manjaro XFCE for it. For $99, it is a 
+                    cool little device, and come a long way since the version I bought 5 years ago.</p>
+                
+                <ol class="post__references">
+                    <li id="1"><a href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/specifications/">Raspberry Pi Documentation</a></li>
+                    
+                </ol>
+            </div>
+        </section>
+
+<!---------------------------------FOOTER--------------------------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+    </body>
+
+
+</html>
