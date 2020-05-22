@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="distro.html" class="actv">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Discover</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+    </nav>
+</header>
+
+
+<!---------------------------------POST-------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">Ubuntu 20.04 LTS Focal Fossa</h3>
+                <h5 class="post__title--subhead">May 22, 2020</h5>
+            </div>
+
+            <div class="post__content">
+                <div class="post__img-container--left">
+                    <img src="images/ubuntu20.04.desktop.png" alt="Ubuntu 20.04" class="post__img">
+                    <p class="post__img-caption">Ubuntu 20.04 Desktop</p>
+                </div>
+                <p class="post__text">The latest version of the Ubuntu operating system was released four weeks ago. I installed this on my distro-hopping machine first and have been running it on my main machine for about two weeks. For those that know anything about me, vanilla Ubuntu is the operating system that I have used primarily since 2006, so when a new version comes out, especially an LTS, I get excited. So here is my review.</p>
+                <p class="post__text">The download process took a lot longer than I expected. It took about 3 hours or more to download. I am unsure the reason because right after Ubuntu finished downloading, I downloaded Kubuntu and it took less than thirty minutes.</p>
+                <p class="post__text">The upgrade for my main machine took two weeks before it was available. I am used to shorter turnaround time, so this seemed rather slow. The upgrade itself was seamless and everything that I already had installed worked just as it did before.</p>
+                <h3>Installation</h3>
+                <p class="post__text">The Ubuntu installation process is essentially the same as it has been for years now. The Ubiquity installer is great as always, and the process is easy. A few quick choices, and it does the rest. There are some great new options, like using ZFS for your file system.</p>
+                <p class="post__text">Right after the install, I was presented with the option to connect different accounts, including UbuntuOne and Google. I have not connected either, but it is nice that integration is there for the people that would like it. Ubuntu also had updates waiting, so I went ahead and updated. I thought I made the selection to have them download during install, but guess it did not work. Strangely enough, the updates were not in the Software Center, but only in the Software Updater.</p>
+                <h3>First Look</h3>
+                <p class="post__text">Ubuntu uses the GNOME desktop, with some modification to allow icons on the desktop, the dash-to-dock placed on the left side which gives it the signature Ubuntu look, similar to Unity Desktop. Ubuntu has used GNOME for several generations and I have really grown accustomed to it.
+                    The lock-screen is updated. Gone is the screen swiping up to reveal the login. Instead, there is a blur effect overlay on the wallpaper chosen for the user desktop. When a key is pressed, there is a subtle fade/switch to the login. It looks great.</p>
+                <p class="post__text">The Yaru theme that Ubuntu now uses looks largely unchanged from the previous two non-LTS versions of the operating system, and that is not a bad thing. If you are upgrading from 18.04, this will be a big visual change, but if you have been on the releases since then, it will not be a change at all.
+                    On the initial desktop, there are icons for the home folder and trash. I removed these for my own setup since I do not really like icons on the desktop. The new icons for folders are nice; I miss the orange, but I will get used to these and like them already. The new default background does not impress me. It looks a little too childish for me with the fossa shooting lasers out of his eyes.</p>
+                <p class="post__text">When looking through the system, it appears the accent colors are refined over the previous generations. Settings switches and loading bars were changed from green or blue to purple, falling more in line with Ubuntu’s gradient colors for its default wallpapers.</p>
+                <div class="post__img-container--right">
+                    <img src="images/ubuntu20.04.darkMode.png" alt="ubuntu 20.04 Darkmode" class="post__img">
+                    <p class="post__img-caption">Ubuntu 20.04 Darkmode</p>
+                </div>
+                <p class="post__text">System animations seem to have been tweaked for this release and are both snappier and smoother than before. The application tray is also improved in a couple of important ways. First, using the trackpad to scroll through the pages of applications is less infuriating. On previous versions the acceleration was poor, resulting in constantly skipping the middle page and always ending on page one or two. Now it takes more scrolling movement to switch between pages, removing that issue. Second, application folders are added, and it is as simple as dragging one application icon on top of another to create a folder. This seems like an obvious feature that was lacking in GNOME. Editing the name of the folder is as simple as clicking on the folder and then clicking on the ‘edit’ button to the right.</p>
+                <p class="post__text">Dark mode has been improved, and no longer impacts input fields on websites. This one issue was the key reason I have not used the dark mode prior to this version. There is still a bit of an issue where certain parts of the system do not respect the dark mode selection, like the notifications dropdown.</p>
+                <h3>Applications</h3>
+                <p class="post__text">The default applications for Ubuntu are largely unchanged but are the newest versions of those.</p>
+                <ul class="post__hardware-list">
+                    <li class="post__hardware-list--item">Firefox for web browser</li>
+                    <li class="post__hardware-list--item">Thunderbird for email client</li>
+                    <li class="post__hardware-list--item">Transmission for torrents</li>
+                    <li class="post__hardware-list--item">LibreOffice for productivity/office related functions</li>
+                    <li class="post__hardware-list--item">Rhythmbox for local music</li>
+                    <li class="post__hardware-list--item">Ubuntu Software for installing software (this is now the SNAP version, which works the same)</li>
+                </ul>
+                <br>
+                <br>
+                <p class="post__text">The settings application has seen a great improvement and is now better organized. Gone is the ‘Devices’ section, moving everything from there into a category on the ‘front page’. I prefer this organization. In addition, there are more options, reducing the reason to use the Tweak Tool. For instance, themes and modifications to the dock have been moved under the appearance section, rather than under the ‘dock’ section and using the Tweak Tool.</p>
+                <div class="post__img-container--left">
+                    <img src="images/Ubuntu_20_04_settings.png" alt="ubuntu 20.04 settings" class="post__img">
+                    <p class="post__img-caption">Ubuntu 20.04 Settings</p>
+                </div>
+                <p class="post__text">Speaking of changes, the Ubuntu Software Center is now a SNAP. And inside the Software Center, you will find SNAPs and repository applications side-by-side. Those coming from 18.04 will find this as a large change, but those coming from 19.10 will not. This may be a problem for people that prefer everything to be from the repository, as sometimes the SNAP is chosen by default. In my opinion, this is not a major issue because I think for the vast majority of ‘normal users’, as long as the application works, will not care. And if you do care, you can always select the repository version, or just install using the command line.</p>
+                <p class="post__text"></p>
+                <p class="post__text">One area that is still a low point for me is Bluetooth. When connecting a device that is already paired, it often takes three or more tries, even if that device is not connected to anything else. I am unsure why this is such a challenge. I have not tried it in Kubuntu or any other flavor, so I am not sure if this is just a GNOME thing or Ubuntu thing.</p>
+                <p class="post__text">I use Ubuntu for web development, including learning JavaScript, Node.js, and more. This means that I have things like Node and npm installed. While I do back everything up, it is always a concern that I will lose data or have to reinstall some of the applications needed, including Visual Studio Code. So far, everything is working as expected. There has been no interruption in using these utilities. </p>
+                <h3>Final Thoughts</h3>
+                <p class="post__text">Overall, Ubuntu 20.04 is a great version of one of the most popular desktop Linux based operating systems. There is some great polish added alongside some performance and functionality improvements. As someone that does not spend a lot of time customizing my desktop from what is out of the box, it is great to see a lot of attention to detail being placed on making that experience. Ubuntu is a reliable operating system, with a lot of support and it is what I will continue to utilize on my main laptop for the foreseeable future, thanks to yet another great addition. I just hope some better Bluetooth functionality will be added in the future. </p>
+
+            </div>
+        </section>
+
+<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+
+    </body>
+
+
+    <!-- 
+         <p class="post__text post__text--right"></p>
+         <p class="post__text post__text--left"></p>
+        <p class="post__text post__text--full"></p>
+        <p class="post__text post__text--full"></p>  
+     -->
+
+</html>
