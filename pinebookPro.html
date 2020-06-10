@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html" class="actv">Blog Posts</a></li>
+            <li><a href="distro.html">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Discover</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+    </nav>
+</header>
+
+
+<!---------------------------------POST---------------------------------------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">PineBook Pro: Measured Expectations</h3>
+                <h5 class="post__title--subhead">June 9, 2020</h5>
+            </div>
+
+            <div class="post__content">
+                <div class="post__img-container--left">
+                    <img src="images/pinebookPro_open.jpg" alt="PineBook Pro" class="post__img">
+                    <p class="post__img-caption">PineBook Pro with Lid Open</p>
+                </div>
+                
+                <p class="post__text">For a long time now, people in the Linux world have been talking about a new budget laptop, the Pinebook Pro. Made by Pine64, this laptop 
+                    costs $200 and is an ARM-powered device with 4gb of RAM, 64gb of EMMC storage, and a 1080p matte screen. The story of this device is simply one of measured 
+                    expectations, to be sure, but I love this little device for the time I have spent with it so far.</p>
+               
+                <h3 class="post__sub-title">Hardware</h3>
+                <p class="post__text">The laptop features a magnesium alloy shell on the top and bottom in solid black. The shell is a complete finger magnet but gives this laptop 
+                    a premium feel that hits well above its class. Just picking this laptop up, you would not think this is a budget laptop; the metal shell and weight makes it 
+                    feel premium. There are ten screws along the bottom that can easily be removed to allow access to the internals. Inside there is room to add an M.2 NVMe drive 
+                    if you purchase the added converter. A full listing of the hardware specifications can be seen <a href="https://www.pine64.org/pinebook-pro/">here.</a></p>
+                
+                <div class="post__img-container--right">
+                    <img src="images/pinebookPro_left.jpg" alt="PineBook Pro" class="post__img">
+                    <p class="post__img-caption">PineBook Pro Left Side</p>
+                </div>
+
+                <p class="post__text">Along the sides are the ports. There is the proprietary power connector, USB-A 3.0 port, and a USB-C port along the left. Along the right are 
+                    a USB-A 2.0 port, headphone jack, and SD card slot. On mine, the USB-A ports are a little snug and inserting/removing USB drives can be difficult. In my testing 
+                    of the USB-C port with my ThinkPad dock allowed power and peripherals like a keyboard to work, but I did not have display-out. I also tested this with my 
+                    USB-C-to-HDMI dongle, and still could not get display-out. The USB card reader seems a little deep; I inserted a card into it and it was a little difficult to 
+                    get out. It did not seem to have the spring-loaded eject system I have seen on other laptops, and when fully inserted, the card sits far enough in that it is 
+                    difficult to pull out. </p>
+                
+                <div class="post__img-container--left">
+                    <img src="images/pinebookPro_right.jpg" alt="PineBook Pro" class="post__img">
+                    <p class="post__img-caption">PineBook Pro right Side</p>
+                </div>
+
+                <p class="post__text">The keyboard deck, trackpad, and keys are plastic. The plastic is rigid but does not have the same premium feel that the outside of the device 
+                    has. The keys have a good amount of travel, feel stiff and offer a good typing experience. Obligatory: This article was written on it. I miss the backlight for 
+                    the keys, but at $200, some sacrifices need to be made. Speaking of sacrifices, a dedicated delete key is one of them. It is replaced by the power button, and 
+                    delete is combined with the backspace key and requires the function key. This is not something that I like; I prefer there to be a power button apart from the 
+                    keyboard, and then have a delete key, but it is something that I can get used to when I am using this machine as a backup.</p>
+                <p class="post__text">Another sacrifice on this laptop is the trackpad. It works, and as mentioned before is plastic, so it is missing the premium feel of a glass 
+                    trackpad, but that I can live with. What gets to me is the precision. The cursor moves just fine; however when trying to come to a stop on something, especially 
+                    a small control on the screen, it often moves a little just as I try to come to a complete stop. Sometimes this is minor, but sometimes it is enough to keep it 
+                    from landing precisely on the button I was trying to hit. Perhaps some driver updates correct this, but it is frustrating and I have not seen any yet. When using 
+                    an external mouse, the same issue is not there, so I know it is just the trackpad. The second issue I have it the right, physical click. It is mushy and does not 
+                    feel like it clicks. The menus pop up, so I know it works, but it feels decidedly different from the left click, which has a very satisfying and sturdy click feel 
+                    and sound. It is almost like two different trackpads.</p>
+                <p class="post__text">As with almost all laptops using Linux, palm rejection is not great at all. And for this laptop, it is a little more noticeable. Let me explain. 
+                    Linux distros tend to utilize a system of palm rejection that turns off the trackpad while typing. This does work well if you are actively typing but starts to fail 
+                    if there is a pause in the typing. While the length of that pause is configurable, the pause between typing varies depending on if I am thinking, watching a show, 
+                    etc. In macOS, and even Windows 10, the system seems to know the difference between a palm resting on the trackpad and tapping/scrolling with a finger. Because the 
+                    method with Linux does not work the same, I find that have more frequent instances of the cursor jumping to the wrong place while typing. I took this into account 
+                    when purchasing my main laptop, the Lenovo ThinkPad X1 Carbon 6th Gen. The trackpad is centered directly under the space key, making it a bit more narrow than a lot 
+                    of machines today, but reducing the likelihood that my palm rests on it in the first place. On the Pinebook Pro, the trackpad is a little larger, and not directly 
+                    centered under the spacebar. I find that my palm rests on it more often, so I turned off the tap to click function so the cursor would not jump so often. This means 
+                    I need to click the trackpad, come into the picture the satisfying left click and the mushy right-click. Suffice to say, I have had better trackpad experiences.</p>
+                <p class="post__text">The screen is a 1080p, IPS panel. It is far better than I expected. Colors look good and on the 14” screen, 1080 is a great resolution. Everything 
+                    is clear and at full brightness, it is pretty bright. The matte finish also means no glare! This screen is not going to win a contest against the screens on $1,000 
+                    and up laptops, but it is a great screen none the less. </p>
+                
+               
+
+                <p class="post__text">The design is fanless. With it using an ARM processor, it does not need the same cooling solutions and x86 processors. Because of this, there is not 
+                    a fan in this laptop, and that means no fan whir. However, there is a sacrifice of power. The design also uses EMMC storage for the boot drive. EMMC is slower for read 
+                    and write speeds, and impacts app launch performance, and overall system speed. Combined with an ARM processor, one may think that a laptop like this would be slow, 
+                    but I have found the opposite. With Linux optimized for ARM, it runs very snappily. I find this to be a much better experience than the Raspberry Pi using either Manjaro 
+                    or Raspbian. Applications launch much faster than I expected, and the whole system just feels well-tuned for the hardware.</p>
+                <p class="post__text">The speakers are serviceable, but do not get very loud, and are not great for listening to music that has more bass than none at all. If you would like 
+                    to listen to someone talking, you should be fine, but I would suggest getting a decent pair of headphones.  </p>
+                <p class="post__text">The WiFi card that is included also seems to struggle at times. Loading YouTube.com took a while, but even more simple sites took a while. I would say 
+                    that loading web based apps, and content heavy sites are going to take a little effort on this laptop’s part. But that being said, the little streaming that I did seemed 
+                    fine once it was loaded. </p>
+                <p class="post__text">The battery life on this device is good. I have not pushed the device from a performance perspective. Just some light surfing, writing this article, 
+                    and some light text editing using Geany. I would say that it has gotten five or more hours with consistent use. Standby works well, and I can usually stretch for a day with 
+                    off and on use. The charger is a bit of a weak point. It is a proprietary, barrel charger that is rather short. I typically find that I cannot plug in an charge while also 
+                    using the laptop. If I am using it a lot and need to charge, I need to stop and charge it. It does charge through the USB-C port when I connect it to my dock. I am going to 
+                    need to test using a regular phone charging brick and a long USB-C cord. If that works, it could alleviate the problem.</p>
+
+                <h3 class="post__sub-title">Software</h3>
+                <p class="post__text">The version that I got comes loaded with Manjaro KDE. I was particularly excited to get the one with Manjaro and I have heard some great things about this 
+                    distribution and tried it briefly on my test machine and the Raspberry Pi.</p>
+                
+                <div class="post__img-container--left">
+                    <img src="images/pinbook_desktop.png" alt="PineBook Pro Desktop" class="post__img">
+                    <p class="post__img-caption">PineBook Pro Desktop</p>
+                </div>
+                
+                <p class="post__text">This version of the OS feels very snappy. It looks nice, polished, and will be familiar to someone coming from Windows 10 in the basic layout. I like the 
+                    mint green and dark theme it has out of the box. The default wallpapers that are themed with the Pine64 and Manjaro logos look great. The icon set is clean as well. I can go 
+                    into a little more depth with a full OS review, but for now, I will hit some highlights. </p>
+                <p class="post__text">Manjaro comes with most of what you would need out of the box. Libre Office, Firefox, Dolphin for the file browser. Manjaro comes with a software center where 
+                    new applications can be installed. There are a lot of applications in there by default. I installed Telegram and Geany already, and everything installed fine. For applications 
+                    not in the software center, there is always the terminal. I installed Node.JS from the terminal and everything went fine there too. And for anything not in the official repository, 
+                    there is the Arch User Repository. That is correct, Manjaro is Arch based, but I am sure you already knew that.</p>
+                <p class="post__text">One small pain point is that since this is ARM-based, there are applications that I use that are not available. For instance, I use VS Code, but that is not 
+                    available. I thought about using Atom, but that is also not available. I understand that it can be compiled, but I have not done that. I plan to try it out when I have a chance and 
+                    will type something up and post it when I finally do it. Suffice to say, I miss it at the moment, but I have Geany for now and perhaps with some plugins, it will become better.</p>
+                
+                <div class="post__img-container--right">
+                    <img src="images/pinebook_new_workflow.png" alt="PineBook Pro Desktop" class="post__img">
+                    <p class="post__img-caption">PineBook Pro Desktop like macOS</p>
+                </div>
+                
+                <p class="post__text">KDE as a desktop environment is starting to grow on me. It is not resource intensive and highly configurable. While default out of the box, it is not a workflow 
+                    that I love, I have found some options finally to make it work. I like to mirror the macOS workflow a little more, so I create a new panel at the top, and add the system tray and an 
+                    application menu. I then add a global menu to function more like macOS. Returning briefly to the applications, Latte Dock is available for the ARM version of Manjaro, so that also got 
+                    installed quickly. I use that to add the Mac-like dock at the bottom. Finally, I set the ‘present windows’ function to the Super+Tab key combination. This mimics Windows 10 but makes 
+                    it more accessible to me and my muscle memory, rather than Function+F10. Once I make these changes, KDE begins to be more useable for me. Since I will be sticking with KDE on this 
+                    machine, I will likely continue to refine this layout for my use, and may finally get it to the workflow that will allow me to leave GNOME; however, for now, GNOME remains on my main 
+                    machine.</p>
+
+                <h3 class="post__sub-title">Final Thoughts</h3>
+                <p class="post__text">As the title says, this laptop is about measured expectations. If you are expecting to have a powerful machine for video editing, application development, or virtualization, 
+                    you will be disappointed. But for $200, you are going to be impressed with what this can do. This little laptop hits way above its weight class and is perfectly suited for web surfing, writing 
+                    documents, streaming videos on youtube, though for the last one, you may want to get some headphones to listen.</p>
+
+                <p class="post__text">While I have better laptops, I still find myself drawn to using the PineBook Pro. It is what I will take when I go on my next work trip, and want to bring along a personal 
+                    laptop to write new articles and update this site. I plan on using this laptop to build a new, practice site using Bootstrap and test this out for basic web development. I want to see how it 
+                    will push the hardware, but I imagine it will handle it. The value that this laptop gives for $200 allows you to look past any of the pain points and just really enjoy using it. Maybe it is 
+                    because as you use it, you continue to be impressed by how good it is for the money spent, but there is just something about this laptop. If this version is already this good, I cannot wait 
+                    to see the second generation of these. I would like to see a $300 model that has more RAM, a more versatile USB-C port, and a backlit keyboard. </p>
+                
+            </div>
+        </section>
+
+<!---------------------------------FOOTER--------------------------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+    </body>
+
+
+</html>
