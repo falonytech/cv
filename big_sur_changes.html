@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="distro.html" class="actv">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Discover</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+        
+    </nav>
+</header>
+
+
+<!---------------------------------POST-------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">macOS: Big Sur</h3>
+                <h5 class="post__title--subhead">November 29, 2020</h5>
+            </div>
+
+            <div class="post__content">
+                <p class="post__text">Apple recently released their new Mac computers with the new M1 chip. Universally, this has been hailed as a step forward in processor technology. Alongside the new Macs, was released the latest version of the macOS, Big Sur. In my experience so far, which is very non-technical, most of the changes are cosmetic, and that is not a bad thing. The system has gotten a visual overhaul and now 
+                    pulls a lot closer to in line with the design of iOS and iPadOS. Let’s step through some of the refreshes. </p>
+                <div class="">
+                    <img src="images/desktop-big-sur.png" alt="MacOS Desktop" class="post__image--full">
+                    <p class="post__img-caption">macOS: Big Sur Desktop</p>
+                </div>
+                
+                <p class="post__text">Right away, you will notice that Apple has done away with the landscape background as the default. While there is a dynamic wallpaper in the options that is of Big Sur, it is not the default. I appreciate the more colorful wallpaper of choice, and so far have stuck with it. It has a night mode version of it as well and looks pretty good. </p>
+                <p class="post__text">The next thing that you will notice in Big Sur is the rounding on the corners of just about everything. From the dock at the bottom to the menus, and windows, even the icons, everything got a more rounded treatment in this refresh. It gives the OS a subtle, but fresh look. </p>
+                
+                <div class="">
+                    <img src="images/big-sur-dock.jpeg" alt="macOS big sur dock" class="post__image--full">
+                    <p class="post__img-caption">macOS Big Sur Dock</p>
+                </div>
+                <div class="">
+                    <img src="images/catalina-dock.jpeg" alt="macOS catalina dock" class="post__image--full">
+                    <p class="post__img-caption">macOS Catalina Dock</p>
+                </div>
+                <div class="">
+                    <img src="images/ipados-dock.jpeg" alt="macOS iPadOS dock" class="post__image--full">
+                    <p class="post__img-caption">iPadOS Dock</p>
+                </div>
+
+                <p class="post__text">You can see in the comparisons that the dock looks a lot more like iOS. I think that this is a good choice, not because I want MacOS to be more like iOS, but because it provides a more consistent experience across devices. If you are someone that happens to live in the Apple ecosystem, then you will have a similar look on all of your devices and applications. 
+                    It also makes sense with the transition to the M1 ARM APU and iOS applications running natively in macOS.</p>
+                <p class="post__text ">Another area where the look and feel are more similar is in the quick settings. You can access this by swiping down from the top right corner in iOS and clicking on the icon in the top right corner in MacOS.</p>
+                <div class="comparison-container">
+                    <img src="images/big-sur-settings.jpeg" alt="macOS big sur quick settings" class="post__image--left">
+                    
+                    <img src="images/ipados-settings.jpeg" alt="iPadOS quick settings" class="post__image--right">
+                    
+                </div>
+                
+                <p class="post__text">While the options may look different, the design is very similar. </p>
+                <p class="post__text">A couple of other design changes that stand out: The menu bar is much more translucent now, rather than just while or dark. Some of the applications also take on a new design, as does the notification and widget section off to the right.  </p>
+                
+                <div class="">
+                    <img src="images/menu-big-sur.png" alt="macOS menu big sur" class="post__image--full">
+                    <p class="post__img-caption">Big Sur Menu</p>
+                </div>
+                <div class="">
+                    <img src="images/menu-catalina.png" alt="macOS menu catalina" class="post__image--full">
+                    <p class="post__img-caption">Catalina Menu</p>
+                </div>
+
+                <p class="post__text">Gone is the gray tone on the tool bar at the top and side. Now, Finder is more of a flat white, with translucency added to the left, side panel. </p>
+                <p class="post__text">The widget and notifications sections on the right is now more free-floating and got the rounded corner treatment as well. It looks great, though this is something that I mostly ignore. 
+                    It usually is pulled out by mistake. </p>
+                
+                <div class="">
+                    <img src="images/notification-big-sur.png" alt="macOS notification big sur" class="post__image--full">
+                    <p class="post__img-caption">Big Sur Notification Panel</p>
+                </div>
+                <div class="">
+                    <img src="images/notification-catalina.png" alt="macOS notification catalina" class="post__image--full">
+                    <p class="post__img-caption">Catalina Notification Panel</p>
+                </div>
+
+                <div class="">
+                    <img src="images/safari-big-sur.png" alt="macOS safari big sur" class="post__image--full">
+                    <p class="post__img-caption">Big Sur Safari</p>
+                </div>
+                <div class="">
+                    <img src="images/safari-catalina.png" alt="macOS safari catalina" class="post__image--full">
+                    <p class="post__img-caption">Catalina Safari</p>
+                </div>
+                <p class="post__text">Safari is also more white and the title bar looks a little larger. </p>
+                <p class="post__text">Overall, the design changes look modern, fresh, and give the OS a great look and feel. I wish Microsoft could be so consistent with Windows. There has not been a place in the OS where I notice things still look older and out of place. 
+                    Everything got the fresh coat of paint, and the attention to detail shows. I like that there are a lot more dynamic wallpapers, as the dynamic theming is something that I do leave on. Kudos to Apple for another refresh of their OS. I would love to try 
+                    it on the new M1 silicon, but I am not ready to pony up the dough to get a new Mac just for a backup and testing computer.  </p>
+
+            </div>
+        </section>
+
+<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+
+
+    </body>
+
+
+    <!-- 
+         <p class="post__text post__text--right"></p>
+         <p class="post__text post__text--left"></p>
+        <p class="post__text post__text--full"></p>
+        <p class="post__text post__text--full"></p>  
+     -->
+
+</html>

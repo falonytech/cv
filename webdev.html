@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html" class="actv">Blog Posts</a></li>
+            <li><a href="distro.html">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Discover</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+        
+    </nav>
+</header>
+
+
+<!---------------------------------POST-------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">Web Development Setup</h3>
+                <h5 class="post__title--subhead">September 30, 2020</h5>
+            </div>
+
+            <div class="post__content">
+              
+                <p class="post__text">The primary thing that I do with my laptop is web development. There are a few other things that I use my laptop, 
+                    or a full fledged computer for, like some light gaming, surfing, etc., but first and foremost is web development and learning. Most 
+                    of the classes I take, and what I see the most in web development is MacOS, and some with Windows; however, I use Ubuntu. Setting 
+                    Linux up with a great workflow for development is easier than a lot of people may think, and because of the Bash Shell, it is easier 
+                    than one might think to follow along with a class where the instructor is using a Mac. There are some places where it is actually easier. 
+                    Below will be a continually updated list of what I do to set up my web development environment. </p>
+
+                <h3 class=" heading--3 post__sub-title">Programs That I Install</h3>
+                <br>
+                <h4 class="heading--4">Visual Studio Code</h4>
+
+                <p class="post__text">I use Visual Studio Code by Microsoft. Understandably, many that use Linux would look at this choice and wonder why 
+                    I would use it over something like Sublime Text or Atom, given that it is made by Microsoft and contains some telemetry data being sent 
+                    back to Microsoft. Let me explain. Visual Studio code is very easy to use, from installing extensions like Color Highlight. These are in 
+                    an easy, searchable store that can be visually combed through. You can see snapshots of them and easily install with the click of a button.</p>
+                <p class="post__text">There are three easy ways to install Visual Studio Code.</p>
+                
+                <p class="post__text">
+                    <ol class="step-list">
+                        <li class="step-list--item">On Ubuntu, you can just go to the Software Center and search for it. This will give you the Snapd version by default.</li>
+                        <li class="step-list--item">Because I am using Ubuntu, I can also go to the website, and download the .deb package. Once you have the .deb package, 
+                            navigate to the folder where it downloaded to and double click to install. (https://code.visualstudio.com/) </li>
+                        <li class="step-list--item">Install through the command line
+
+                    </ol>
+                            <ul class="command-list">
+                                <li class="cli-command">sudo apt update</li>
+                                <li class="cli-command">sudo apt install software-properties-common apt-transport-https wget</li>
+                                <li class="cli-command">wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -</li>
+                                <li class="cli-command">sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"</li>
+                                <li class="cli-command">sudo apt update</li>
+                                <li class="cli-command">sudo apt install code</li>
+                            </ul>
+                        </li>
+                        
+                    
+                </p>
+                <br>
+                <h4 class="heading--4">NodeJS and NPM</h4>
+                <p class="post__text">NodeJS, and subsequently NPM, opens up a lot of great command line tools that make web development easier, including SCSS/SASS and Live-Server. 
+                    So many of the additional tools that I use stem from NodeJS.</p>
+                <p class="post__text">NodeJS can be installed through a Snapd package in the Ubuntu Software Center, but this can make installing packages globally a little more 
+                    challenging. So I prefer installing through the command line. </p>
+                
+                <ul class=command-list>
+                    <li class="cli-command">curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -</li>
+                    <li class="cli-command">sudo apt-get install -y nodejs</li>
+                </ul>
+
+               
+                <p class="post__text">Once NodeJS is installed, I use npm to install Live Server. This allows me to navigate to my project folder, run the command, and have a live 
+                    versions of the webpage open in my default browser. It will continuously watch for updates and apply them.</p>
+                
+                <p class="cli-command">sudo npm install -g live-server</p>
+                
+                <p class="post__text">Once I have my project folder created, I navigate to the folder and create the package.json with an npm script. If using a NodeJS express server 
+                    for the project, I need to ensure that the default .js file has been created as the entry point for express.</p>
+
+                <p class="cli-command">npm init</p>
+
+                <p class="post__text">Then follow the prompts in the terminal. Once the package.json is created, it is time to install SASS/SCSS compiler. For this, I use the command:</p>
+
+                <p class="cli-command">npm install node-sass --save-dev</p>
+
+                <p class="post__text">Next, if I am going to use an Express Server for the project, I install Express by using the script:.</p>
+
+                <p class="cli-command">npm install express --save</p>
+
+                <p class="post__text">The following is a link to the ExpressJS documentation for getting started with using it in a project. http://expressjs.com/en/starter/installing.html. 
+                    In order to have the express server look for updates to the .js file, I install nodemon. To so this, I use the script:</p>
+
+                <p class="cli-command">sudo npm install -g nodemon</p>
+
+                <p class="post__text">Then, to use it, I just need to be in the project file where it the .js file is located, and run:</p>
+
+                <p class="cli-command">nodemon fileName.js</p>
+
+                
+
+                <h3 class="heading--4">MongoDB</h3>
+                <p class="post__text">In my learning, I have begun using MongoDB for storing blog posts. Below are some of the steps needed to install and then use it. What I have found is 
+                    that starting MongoDB is different from what is done in Windows and MacOS. I am including a link to the official MongoDB site for installation, but the way to start it, 
+                    I have included the specific directions.</p>
+                <br>
+                <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/ " class="product-link ">MongoDB Ubuntu Install</a>
+                <br>
+                <br>
+                <p class="cli-command">sudo systemctl start mongod</p>
+                <p class="cli-command">mongo</p>
+                                
+        </section>
+
+<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+
+
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+    </body>
+
+
+</html>
