@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html" class="actv">Blog Posts</a></li>
+            <li><a href="distro.html" >Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+        
+    </nav>
+</header>
+
+
+<!---------------------------------POST-------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">30 Days of Microsoft - Office Online</h3>
+                <h5 class="post__title--subhead">February 19, 2021</h5>
+            </div>
+
+
+            <div class="post__content">           
+
+                <p class="post__text">Continuing my usage of Microsoft Office 365, I am focusing now on migrating my documents from Google Docs to Office Online. I am excited to make this transition for one big reason, I am familiar with Office because I use it all day at work. I am in Excel almost every day and am very familiar with the options, formulas, and layout. Using Google Docs for personal use is not familiar or very pleasant. I often find myself thinking that Google Sheets feels lacking in functionality. It is nice to have Excel’s layout back. I look forward to using it more, even though it is a streamlined version. Google Docs is fine for the basics in word processing that I have, but even for that, I like having Office’s layout back. And the streamlined ribbon for this online version is nice.    </p>
+                <p class="post__text">The experience started with a spreadsheet. At first, I was not so impressed as I was unable to copy and paste between the two and thought that I was going to have to manually enter everything. But after the first sheet in the workbook, I was able to do complete the copy and paste. From there, it was just some small formatting and I was good.    </p>
+                <p class="post__text">Next, I moved my resume over from Google Docs to Office Online. The copy and paste went perfectly, and even the formatting carried over well. That was incredibly simple, and a testament to how well the two work with each other. What I like so far with Word Online is the familiarity with regular Office Word. The ribbon is simplified, but it is all the main options that one would need with simple document editing. It is also a key way to use Office while I am on my Ubuntu ThinkPad. I was also easily able to download the document from Word Online and open it in Libre Office without much loss in formatting. This is convenient if I would like to edit offline. What is more, there is also an option to save in the ODT format. This feature also worked very well, with little loss in format. I will note that while Libre Office even displays the document in Calibri font, the font looks different between the two systems.   </p>
+                <p class="post__text">Outlook Online looks like it has been updated and made to work better with the rest of Office Online. I will say, this works similar to the business Outlook application, which is a good thing. I am very used to using that application, so using a web app that is so similar is nice.  </p>
+                <p class="post__text">For recent travel, all I brought with me was my Linux laptop and a phone. I have not missed a beat while working on this article. Accessing everything on the road is just as easy.   </p>
+                <h3 class="post__sub-title">Phone Update</h3>
+                <p class="post__text">I have a couple quick updates from my experience using Microsoft products on my android phone. First, the launcher continues to have issues displaying the home screens when swiping up to return to the home screen from within the app. I cannot tell if it just takes time for everything to pop up, or if it takes me tapping on the screen, but it is frustrating. This is never an issue when I use the default UI for the phone.   </p>
+                <p class="post__text">The second issue that I am now discovering is the Swift Keyboard. While this keyboard is great for swipe texting; I think it is the original, it is horrible for regular typing. I have wide thumbs, which makes typing on a phone very prone to mistyping, but my mistyping is far worse on this keyboard. I rarely get through a sentence without having to correct half of the words. And the words that it corrects to are often far from what I was looking for. I am finding that I really have to stick with Swipe typing unless I am typing something that I simply cannot use it for.   </p>               
+
+            </div>
+        </section>
+
+<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+        <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+
+
+    </body>
+
+
+    <!-- 
+         <p class="post__text post__text--right"></p>
+         <p class="post__text post__text--left"></p>
+        <p class="post__text post__text--full"></p>
+        <p class="post__text post__text--full"></p>  
+
+        <div class="">
+            <img src="images/complete-build-2020-new-card-inserted.jpg" alt="New card inserted" class="post__image--full">
+            <p class="post__img-caption">New card inserted</p>
+        </div>
+     -->
+
+</html>
