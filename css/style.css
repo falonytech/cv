@@ -140,7 +140,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 2%;
+  right: 5%;
   background-color: #fff;
   min-width: 200px;
   overflow: auto;
