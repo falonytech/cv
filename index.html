@@ -137,12 +137,21 @@
 <!---------------------------------NEW DISTRO SECTION-------------------------------------------------------------------------------------------------------->
         <section class="distro">
                 <div class="distro__header">
-                    <h2 class="distro__title">MacOS: Big Sur</h2>
-                    <p class="distro__expl">Alongside the new Macs, was released the latest version of the MacOS, Big Sur. In my experience so far, which is very non-technical, most of the changes are cosmetic, and that is not a bad thing. The system has gotten a visual overhaul, and now pulls a lot closer to in line with the design of iOS and iPadOS. Let’s step through some of the refresh.</p>
-                    <a class="distro__button" href="big_sur_changes.html">OS Hop!</a>
+                    <h2 class="distro__title">Fedora 34 - Gnome - First Impressions</h2>
+                    <p class="distro__expl">Fedora 34 comes with the new Gnome 40 Desktop Environment. I have not tried out a new distro in a while, but I was interested in seeing the new Gnome desktop, so I decided to combine that desire with trying the latest Fedora.</p>
+                    <a class="distro__button" href="Fedora_34_First_Impressions.html">OS Hop!</a>
                 </div>
 
                 <div class="distro__card distro__card--1">
+                    <a href="big_sur_changes.html" class="blog__link"><img src="images/desktop-big-sur.png" alt="MacOS Big Sur" class="distro__img"></a>
+                    <div class="distro__card--container">
+                        <a href="big_sur_changes.html" class="blog__link"> <h3 class="heading--3 distro__card--title">MacOS Big Sur</h3></a>
+                        <h5 class="heading--5 distro__card--date">November 29, 2020</h5>
+                        <p class="distro__preview">Alongside the new Macs, was released the latest version of the MacOS, Big Sur. In my experience so far, which is very non-technical, most of the changes are cosmetic, and that is not a bad thing. The system has gotten a visual overhaul, and now pulls a lot closer to in line with the design of iOS and iPadOS. Let’s step through some of the refresh.</p>
+                    </div>
+                </div>
+
+                <div class="distro__card distro__card--2">
                     <a href="ubuntu_20_04.html" class="blog__link"><img src="images/ubuntu20.04.desktop.png" alt="Ubuntu 20.04 Desktop" class="distro__img"></a>
                     <div class="distro__card--container">
                         <a href="ubuntu_20_04.html" class="blog__link"><h3 class="heading--3 distro__card--title">Ubuntu 20.04</h3></a>
@@ -152,7 +161,7 @@
                     </div>
                 </div>
 
-                <div class="distro__card distro__card--2">
+                <div class="distro__card distro__card--3">
                     <a href="solus4.1.html" class="blog__link"><img src="images/solus_4.1.png" alt="Solus 4.1" class="distro__img"></a>
                     <div class="distro__card--container">
                         <a href="ubuntu_20_04.html" class="blog__link"><h3 class="heading--3 distro__card--title">Solus 4.1 Fortitude</h3></a>
@@ -164,14 +173,7 @@
 
                 </div>
 
-                <div class="distro__card distro__card--3">
-                    <a href="arch_distro.html" class="blog__link"><img src="images/arch_linux_menu.png" alt="Arch Linux" class="distro__img"></a>
-                    <div class="distro__card--container">
-                        <a href="arch_distro.html" class="blog__link"> <h3 class="heading--3 distro__card--title">Arch Linux</h3></a>
-                        <h5 class="heading--5 distro__card--date">March 19, 2019</h5>
-                        <p class="distro__preview">Recently I finally decided to take the plunge and attempt to install Arch Linux. It took me two tries, with a walk-through video, and then detecting what was done incorrectly in the video and correcting that the second time through, but I finally I was successful. I would like to talk about my first impressions in completing the install and using the system.</p>
-                    </div>
-                </div>
+                
 
                 
 
@@ -190,27 +192,7 @@
             
         </footer>
 
-        <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-        </script>
+        <script src="./js/index.js">        </script>
 
 	</body>
 
