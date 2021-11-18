@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="distro.html" class="actv">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+    </nav>
+</header>
+
+
+<!---------------------------------POST-------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">Ubuntu 21.10 First Impressions</h3>
+                <h5 class="post__title--subhead">November 11, 2021</h5>
+            </div>
+
+            <div class="post__content">
+                <div class="post__img-container--full">
+                    <img src="images/ubuntu_21.10_desktop.png" alt="Windows 11 Start" class="post__image--full">
+                    <p class="post__img-caption">Ubuntu 21.10 desktop</p>
+                </div>
+
+                <p class="post__text">The message to upgrade to the latest version of ubuntu came a lot faster than expected this time around. Normally 
+                    I wait a few weeks before getting the notification, but this time it appeared to be a matter of days. I was excited to get this 
+                    upgrade for two reasons. First, this one would have Gnome 40 as the desktop environment, which I have been looking forward to. Second, 
+                    I have had a nagging error since 21.04, where I was continuously getting a failure during updates. Most of the updates would install, 
+                    but there would be a failure for some part of the update every time. I was thinking at one point that I would need to do a fresh install 
+                    of the operating system, but I decided to wait until I have done the upgrade and see if that would take care of it.  
+                </p>
+                <p class="post__text">During the upgrade process, I received and error that was descriptive enough for me to know what was causing it and 
+                    fix it. Since the upgrade and the fix that I put in place, I have not had any errors when updating the system. Everything has worked the 
+                    way that it should.  
+                </p>
+                
+                
+                <h3>User Interface</h3>
+
+                <p class="post__text">Ubuntu 21.10 uses the newer Gnome 40 Desktop Environment1. One of the most exciting elements to this is the new Desktop 
+                    Overview, which has switched to a horizontal layout for the multiple desktops. It combines desktop switching and viewing the visible open 
+                    applications on the selected desktop. I am a fan of the new layout. It has a fresh feel to it, but that is about it. There is not some major 
+                    gain in functionality from the prior layout. 
+                </p>
+
+                <div class="post__img-container--full">
+                    <img src="images/ubuntu_21.10_desktop_overview.png" alt="desktop overview" class="post__image--full">
+                    <p class="post__img-caption">Desktop Overview</p>
+                </div>
+
+                <p class="post__text">The same horizontal layout is given to the application launcher as well. At least on Ubuntu, the applications that are 
+                    pinned to the dock do not appear in the application launcher also, which seems to be a change from before. Speaking of the dock, the trash 
+                    can now is on the dock and there is a clear separator for applications that are not pinned to the dock, but are open, and those that are pinned 
+                    to the dock.  
+                </p>
+                <p class="post__text">The default theme for Ubuntu is now a lighter theme, with the title bars of windows having the lighter Yaru theme. While I 
+                    like the attempt at consistency between light and dark themes, it is still a little lacking. And I enjoyed the classic Ubuntu mixture between 
+                    light and dark that it used to have. I have found that I leave mine on the dark theme now, and there is a lack of consistency when using one or 
+                    the other, where certain windows will still appear in the opposite theme.  
+                </p>
+
+                <div class="post__img-container--full">
+                    <img src="images/ubuntu_21.10_dark_theme.png" alt="ubuntu dark theme" class="post__image--full">
+                    <p class="post__img-caption">Dark theme seems to be a little inconsistent</p>
+                </div>
+
+                <h3>Applications</h3>
+
+                <p class="post__text">Ubuntu 21.10 continues the path Canonical has been taking where more and more applications by default are SNAPs. While I am 
+                    not totally bothered by this, I do still prefer applications to be installed through the repository directly, rather than a SNAP. There are 
+                    advantages to the application being a SNAP, such as being able to keep the application on the latest version, separate from the operating system 
+                    version. Of course, with normal applications from the repository, one is stuck on the version that came with that system’s repository, only updated 
+                    with the next system upgrade. If the application is a SNAP, it can be updated between system upgrades.  
+                </p>
+                <p class="post__text">Firefox is one of the latest applications to be SNAP by default. I immediately switch this application back to coming from the 
+                    repository. One of the disadvantages of SNAPs is that they do not launch as fast. Since the browser is one of the applications that I use the most, 
+                    I want it to launch as quickly as possible. I also do not see a need for it to be updated as quickly.  
+                </p>
+
+                
+
+                <p class="post__text">At the end of the day, most  users will not notice, nor will they care. An average user just wants the applications to be easy to 
+                    use, and do not care about the format. The average Linux user; however, probably will care.  
+                </p>
+                <p class="post__text">The settings application seems to have had more of the options moved to it, and removed from the Gnome Tweaks. One area that was a 
+                    little confusing this time around was removing the icons from the desktop. I searched the settings and Gnome Tweaks, but the option was not there. 
+                    Right clicking on the icons gives an option to go to the settings to remove them. That would be expected in KDE, but not in Gnome.  
+                </p>
+
+                <h3>Final Thoughts</h3>
+                
+                <p class="post__text">Ubuntu 21.10 is still Ubuntu. The upgrade process was easy; it uses the Gnome desktop environment, and is it based on Debian. I 
+                    like some of the refresh that it has received, and it still works well. Ubuntu 21.10 is a stable operating system for those that just need to get 
+                    work done, and do not need to be on the cutting edge. It is familiar; it is easy to use and find support for, and it is what a lot of application 
+                    developers target. The sign of a good operating system is that it gets the job done without getting in the way or making it difficult. Ubuntu 21.10 
+                    does that for sure and does not give me a reason to want to switch to something else. One thing that does get me though, and I noticed this with the last version 
+                    as well; there are a lot of updates. I have more updates almost every time I use the computer. Maybe I am just not using the computer frequently enough so I 
+                    always have updates when I do, but it is just odd to have so many. 
+                </p>
+                
+
+            </div>
+        </section>
+
+<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+
+        <script src="./js/index.js">        </script>
+
+
+
+    </body>
+
+
+    <!-- 
+         <p class="post__text post__text--right"></p>
+         <p class="post__text post__text--left"></p>
+        <p class="post__text post__text--full"></p>
+        <p class="post__text post__text--full"></p>  
+     -->
+
+</html>
