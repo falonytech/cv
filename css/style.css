@@ -428,7 +428,7 @@ body {
       display: flex;
       flex-direction: column; } }
   .distro__header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/fedora-34-activities-overview.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.69), rgba(0, 0, 0, 0.69)), url(../images/windows_11_start_menu.png);
     background-size: cover;
     grid-row: 1 / 2;
     grid-column: 1 / -1;
