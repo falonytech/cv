@@ -1,200 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" href="images/favicon.ico">
-        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/style.css">
-        
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-        
-        <title>Falony Tech</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<body class="container">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap"
+        rel="stylesheet">
 
-        
+    <link rel="stylesheet" href="css/style.css">
 
-<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
-		<header class="header">
-            <a class="header__link" href="index.html">
-                <div class="header__title">
-                    <h1>FalonyTech</h1>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <title>Falony Tech</title>
+</head>
+
+<body class="container">
+
+
+
+    <!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+    <header class="header">
+        <a class="header__link" href="index.html">
+            <div class="header__title">
+                <h1>FalonyTech</h1>
+            </div>
+        </a>
+
+
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="index.html" class="actv">Home</a></li>
+                <li><a href="blog.html">Blog Posts</a></li>
+                <li><a href="distro.html">Distro</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile__nav">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog Posts</a>
+                    <a href="distro.html">Distro</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="https:\\nicholasfalony.com">Contact</a>
                 </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <section class="blog-head">
+        <div class="blog-head__title">
+            <h2 class="heading--2  blog-head__heading">Latest Insights and Reviews</h2>
+        </div>
+    </section>
+
+    <!---------------------------------BLOG POST SECTION-------------------------------------------------------------------------------------------------------->
+    <section class="blog">
+
+        <div class="blog__post">
+            <a href="reinstall_windows.html" class="blog__link">
+                <img src="images/Screenshot (41).png" alt="Windows 10 Start Menu" class="blog__img">
             </a>
-
-            
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li ><a href="index.html" class="actv">Home</a></li>
-                    <li><a href="blog.html">Blog Posts</a></li>
-                    <li><a href="distro.html">Distro</a></li>
-                    <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="https:\\nicholasfalony.com">Contact</a></li>
-                </ul>
-            </nav>
-
-            <nav class="mobile__nav">
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Menu</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="index.html">Home</a>
-                        <a href="blog.html">Blog Posts</a>
-                        <a href="distro.html">Distro</a>
-                        <a href="aboutme.html">About Me</a>
-                        <a href="https:\\nicholasfalony.com">Contact</a>
-                    </div>
-                  </div>
-                
-            </nav>
-        </header>
-
-
-        <section class="blog-head">
-            <div class="blog-head__title">
-                <h2 class="heading--2  blog-head__heading">Latest Insights and Reviews</h2>
+            <div class="blog__content">
+                <a href="reinstall_windows.html" class="blog__link">
+                    <h3 class="heading--3 blog__title">Windows Reinstall</h3>
+                    <h5 class="heading--5 blog__date">April 3 2022</h5>
+                    <p class="blog__preview">After a recent replacement of my gaming laptop's SSD, I was in the position
+                        of
+                        reinstalling Windows 10. After the reinstall, I got to go through all of the things about
+                        Windows that
+                        make this operating system a chore to deal with, and why I prefer to use Linux. I use Windows
+                        for gaming
+                        only, but having it around so I can keep up with the latest trends, bad as they are, is nice.
+                    </p>
+                </a>
             </div>
-        </section>
+        </div>
 
-<!---------------------------------BLOG POST SECTION-------------------------------------------------------------------------------------------------------->
-        <section class="blog">
-
-            <div class="blog__post">   
+        <div class="blog__post">
+            <a href="vacation-2021.html" class="blog__link">
+                <img src="images/discovery_cove_entrance.jpg" alt="pdiscovery cove entrance" class="blog__img">
+            </a>
+            <div class="blog__content">
                 <a href="vacation-2021.html" class="blog__link">
-                    <img src="images/discovery_cove_entrance.jpg" alt="pdiscovery cove entrance" class="blog__img">
+                    <h3 class="heading--3 blog__title">Family Vacation 2021 - Travel Tech</h3>
+                    <h5 class="heading--5 blog__date">June 19, 2021</h5>
+                    <p class="blog__preview">Recently, I took my family on vacation, and decided to bring a pared down
+                        set of tech with me. I am going
+                        to walk through some of my experiences with the tech that I brought, though I have to admit that
+                        I did not get a whole lot of time to utilize
+                        any of it.
+                    </p>
                 </a>
-                <div class="blog__content">
-                    <a href="vacation-2021.html" class="blog__link">
-                        <h3 class="heading--3 blog__title">Family Vacation 2021 - Travel Tech</h3>
-                        <h5 class="heading--5 blog__date">June 19, 2021</h5>
-                        <p class="blog__preview">Recently, I took my family on vacation, and decided to bring a pared down set of tech with me. I am going 
-                            to walk through some of my experiences with the tech that I brought, though I have to admit that I did not get a whole lot of time to utilize 
-                            any of it.   
-                        </p>
-                    </a>
-                </div> 
-            </div> 
+            </div>
+        </div>
 
-            <div class="blog__post">   
+        <div class="blog__post">
+            <a href="acer-nitro-5-review.html" class="blog__link">
+                <img src="images/acer-nitro-open.jpg" alt="Acer Nitro 5 17.3 inch 2020 model" class="blog__img">
+            </a>
+            <div class="blog__content">
                 <a href="acer-nitro-5-review.html" class="blog__link">
-                    <img src="images/acer-nitro-open.jpg" alt="Acer Nitro 5 17.3 inch 2020 model" class="blog__img">
+                    <h3 class="heading--3 blog__title">Acer Nitro 5 17.3 inch 2020 Model Review</h3>
+                    <h5 class="heading--5 blog__date">May 9, 2021</h5>
+                    <p class="blog__preview">I was originally going to write a multi-part series on this new laptop,
+                        including a first impressions and then review article, but I started using the laptop regularly
+                        for gaming and neglected writing the article until now. Since I have been using the laptop for
+                        over a month, I am just going to write the review.
+
+                    </p>
                 </a>
-                <div class="blog__content">
-                    <a href="acer-nitro-5-review.html" class="blog__link">
-                        <h3 class="heading--3 blog__title">Acer Nitro 5 17.3 inch 2020 Model Review</h3>
-                        <h5 class="heading--5 blog__date">May 9, 2021</h5>
-                        <p class="blog__preview">I was originally going to write a multi-part series on this new laptop, including a first impressions and then review article, but I started using the laptop regularly for gaming and neglected writing the article until now. Since I have been using the laptop for over a month, I am just going to write the review.  
- 
-                        </p>
-                    </a>
-                </div> 
             </div>
+        </div>
 
 
 
-            <div class="blog__post">   
+        <div class="blog__post">
+            <a href="office_linux.html" class="blog__link">
+                <img src="images/office-comparison.png" alt="PineBook Pro" class="blog__img">
+            </a>
+            <div class="blog__content">
                 <a href="office_linux.html" class="blog__link">
-                    <img src="images/office-comparison.png" alt="PineBook Pro" class="blog__img">
+                    <h3 class="heading--3 blog__title">30 Days of Microsoft - Office Online</h3>
+                    <h5 class="heading--5 blog__date">February 19, 2021</h5>
+                    <p class="blog__preview">I have been using Microsoft Office 365 for more than 30 days now, and I
+                        have a few updates and a new part of the
+                        ecosystem to talk about. Office 365 is as easy to use as I would expect. The phone applications;
+                        however, are not as good as I would expect. I will
+                        cover my experience so far.
+                    </p>
                 </a>
-                <div class="blog__content">
-                    <a href="office_linux.html" class="blog__link">
-                        <h3 class="heading--3 blog__title">30 Days of Microsoft - Office Online</h3>
-                        <h5 class="heading--5 blog__date">February 19, 2021</h5>
-                        <p class="blog__preview">I have been using Microsoft Office 365 for more than 30 days now, and I have a few updates and a new part of the 
-                            ecosystem to talk about. Office 365 is as easy to use as I would expect. The phone applications; however, are not as good as I would expect. I will
-                            cover my experience so far. 
-                        </p>
-                    </a>
-                </div> 
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+    <!---------------------------------NEW DISTRO SECTION-------------------------------------------------------------------------------------------------------->
+    <section class="distro">
+        <div class="distro__header">
+            <h2 class="distro__title">Windows 11</h2>
+            <p class="distro__expl">Windows 11 is here and I was offered the upgrade. Windows 11 really feels more like
+                an upgrade to Windows 10, with a fresh coat of paint.</p>
+            <a class="distro__button" href="windows_11.html">OS Hop!</a>
+        </div>
+
+        <div class="distro__card distro__card--1">
+            <a href="ubuntu_21.10.html" class="blog__link"><img src="images/ubuntu_21.10_desktop.png"
+                    alt="Ubuntu 21.10 Desktop" class="distro__img"></a>
+            <div class="distro__card--container">
+                <a href="ubuntu_21.10.html" class="blog__link">
+                    <h3 class="heading--3 distro__card--title">Ubuntu 21.10</h3>
+                </a>
+                <h5 class="heading--5 distro__card--date">November 11, 2021</h5>
+                <p class="distro__preview">Another version of Ubuntu brings a host of new changes, including an
+                    elimination of the now classic Ubuntu combination of dark and light modes as a defaul theme. New is
+                    also a move to the Gnome 40 desktop environment. I will give my thoughts on some of the changes, and
+                    how the upgrade process has gone for me. </p>
+            </div>
+        </div>
+
+        <div class="distro__card distro__card--2">
+            <a href="Fedora_34_First_Impressions.html" class="blog__link"><img src="images/fedora-34-desktop.png"
+                    alt="Fedora 34" class="distro__img"></a>
+            <div class="distro__card--container">
+                <a href="Fedora_34_First_Impressions.html" class="blog__link">
+                    <h3 class="heading--3 distro__card--title">Fedora 34 - Gnome</h3>
+                </a>
+                <h5 class="heading--5 distro__card--date">May 17, 2021</h5>
+                <p class="distro__preview">Fedora 34 comes with the new Gnome 40 Desktop Environment. I have not tried
+                    out a new distro in a while, but I was interested in seeing the new Gnome desktop, so I decided to
+                    combine that desire with trying the latest Fedora.</p>
             </div>
 
-            <div class="blog__post">   
-                <a href="Microsoft_Day_1.html" class="blog__link">
-                    <img src="images/OneDrive.png" alt="One Drive" class="blog__img">
+        </div>
+
+        <div class="distro__card distro__card--3">
+            <a href="big_sur_changes.html" class="blog__link"><img src="images/desktop-big-sur.png" alt="MacOS Big Sur"
+                    class="distro__img"></a>
+            <div class="distro__card--container">
+                <a href="big_sur_changes.html" class="blog__link">
+                    <h3 class="heading--3 distro__card--title">MacOS Big Sur</h3>
                 </a>
-                <div class="blog__content">
-                    <a href="Microsoft_Day_1.html" class="blog__link">
-                        <h3 class="heading--3 blog__title">30 Days of Microsoft</h3>
-                        <h5 class="heading--5 blog__date">January 31, 2021</h5> 
-                        <p class="blog__preview">My subscription to Office 365 is coming up for renewal. My wife uses Office regularly and wanted to keep it. Office is not directly available on 
-                            Linux, which is what I use, but I do prefer it for spreadsheets and documents. Since I am already paying for Office 365, the though occured to me, why not make use of 
-                            all of the services that come with the subscription, including the cloud storage, Office Online, etc. And if I am going to try Office online and the cloud storage, I thought
-                            it would be fun to take it the next step further and try out Microsoft applications for Android, iOS, and with my Windows desktop. I will be testing out the way it can integrate
-                            into my daily flow, across many different systems, including Linux.
-                        </p>
-                    </a>
-                </div> 
-            </div>  
-         
-                                  
-                
-        </section>
+                <h5 class="heading--5 distro__card--date">November 29, 2020</h5>
+                <p class="distro__preview">Alongside the new Macs, was released the latest version of the MacOS, Big
+                    Sur. In my experience so far, which is very non-technical, most of the changes are cosmetic, and
+                    that is not a bad thing. The system has gotten a visual overhaul, and now pulls a lot closer to in
+                    line with the design of iOS and iPadOS. Let’s step through some of the refresh.</p>
+            </div>
+        </div>
 
-<!---------------------------------NEW DISTRO SECTION-------------------------------------------------------------------------------------------------------->
-        <section class="distro">
-                <div class="distro__header">
-                    <h2 class="distro__title">Windows 11</h2>
-                    <p class="distro__expl">Windows 11 is here and I was offered the upgrade. Windows 11 really feels more like an upgrade to Windows 10, with a fresh coat of paint.</p>
-                    <a class="distro__button" href="windows_11.html">OS Hop!</a>
-                </div>
 
-                <div class="distro__card distro__card--1">
-                    <a href="ubuntu_21.10.html" class="blog__link"><img src="images/ubuntu_21.10_desktop.png" alt="Ubuntu 21.10 Desktop" class="distro__img"></a>
-                    <div class="distro__card--container">
-                        <a href="ubuntu_21.10.html" class="blog__link"><h3 class="heading--3 distro__card--title">Ubuntu 21.10</h3></a>
-                        <h5 class="heading--5 distro__card--date">November 11, 2021</h5>
-                        <p class="distro__preview">Another version of Ubuntu brings a host of new changes, including an elimination of the now classic Ubuntu combination of dark and light modes as a defaul theme. New is also a move to the Gnome 40 desktop environment. I will give my thoughts on some of the changes, and how the upgrade process has gone for me. </p>
-                    </div>
-                </div>
 
-                <div class="distro__card distro__card--2">
-                    <a href="Fedora_34_First_Impressions.html" class="blog__link"><img src="images/fedora-34-desktop.png" alt="Fedora 34" class="distro__img"></a>
-                    <div class="distro__card--container">
-                        <a href="Fedora_34_First_Impressions.html" class="blog__link"><h3 class="heading--3 distro__card--title">Fedora 34 - Gnome</h3></a>
-                        <h5 class="heading--5 distro__card--date">May 17, 2021</h5>
-                        <p class="distro__preview">Fedora 34 comes with the new Gnome 40 Desktop Environment. I have not tried out a new distro in a while, but I was interested in seeing the new Gnome desktop, so I decided to combine that desire with trying the latest Fedora.</p>
-                    </div>
 
-                </div>
 
-                <div class="distro__card distro__card--3">
-                    <a href="big_sur_changes.html" class="blog__link"><img src="images/desktop-big-sur.png" alt="MacOS Big Sur" class="distro__img"></a>
-                    <div class="distro__card--container">
-                        <a href="big_sur_changes.html" class="blog__link"> <h3 class="heading--3 distro__card--title">MacOS Big Sur</h3></a>
-                        <h5 class="heading--5 distro__card--date">November 29, 2020</h5>
-                        <p class="distro__preview">Alongside the new Macs, was released the latest version of the MacOS, Big Sur. In my experience so far, which is very non-technical, most of the changes are cosmetic, and that is not a bad thing. The system has gotten a visual overhaul, and now pulls a lot closer to in line with the design of iOS and iPadOS. Let’s step through some of the refresh.</p>
-                    </div>
-                </div>
 
-                
 
-                
 
-                
 
-                
+    </section>
 
-        </section>
+    <!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="footer__contact">
+            <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+            <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+        </div>
+        <br>
+        <div class="row">
+            <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+        </div>
 
-<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
-		<footer class="footer">
-                <div class="footer__contact">
-                    <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
-                    <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
-                </div>
-                <br>
-                <div class="row">
-                    <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
-                </div>
-            
-        </footer>
+    </footer>
 
-        <script src="./js/index.js">        </script>
+    <script src="./js/index.js">        </script>
 
-	</body>
+</body>
 
 
 </html>

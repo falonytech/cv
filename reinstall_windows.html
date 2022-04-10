@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Falony Tech</title>
+</head>
+
+<body class="bloglist--container">
+    <!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+    <header class="header">
+        <a class="header__link" href="index.html">
+            <div class="header__title">
+                <h1>FalonyTech</h1>
+            </div>
+        </a>
+
+
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html" class="actv">Blog Posts</a></li>
+                <li><a href="distro.html">Distro</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+            </ul>
+        </nav>
+
+        <nav class="mobile__nav">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Menu</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="blog.html">Blog Posts</a>
+                    <a href="distro.html">Distro</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="https:\\nicholasfalony.com">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!---------------------------------POST-------------------------------------------------------------------------------------------------------->
+
+    <section class="post">
+        <div class="post__title">
+            <h3 class="post__title--heading">Reinstall Windows</h3>
+            <h5 class="post__title--subhead">April 3, 2022</h5>
+        </div>
+
+        <div class="post__content">
+            <div class="post__img-container--full">
+                <img src="images/Screenshot (41).png" alt="Windows 10 Start Menu" class="post__image--full">
+                <p class="post__img-caption">Windows 10 Start Menu with ads</p>
+            </div>
+
+            <p class="post__text">Recently my gaming laptop started to run out of space due to the number of games that
+                are installed on it. The laptop came with a 512Gb NVMe SSD and that was quickly getting filled up. I
+                purchased a new, 2 one and try Linux gaming; however, that did not work. Instead, the system would not
+                recognize the SSD was there for boot, and I could only boot into Windows. I eventually gave up on that
+                and decided that I would just replace the 512Gb one and install Windows on the new one. </p>
+            <p class="post__text">Installing Windows 10 was about as anyone could expect. Everything went as expected,
+                and I was once walking me through the process. Great, so I am through that process and finally have
+                Windows on the computer, 2Tb of storage.</p>
+            <p class="post__text">After the install came the updates. The updater immediately started installing updates
+                up to 21H1, but nothing beyond that. I immediately saw an alert about Windows 11, but it was not the
+                upgrade. It just was a link to a description about Windows 11 and whether the laptop is compatible, but
+                not the upgrade. It took several days before the upgrade to Windows 11 finally came. </p>
+
+            <div class="post__img-container--full">
+                <img src="images/Screenshot (49).png" alt="Windows 11 Update notification" class="post__image--full">
+                <p class="post__img-caption">Windows 11 Update notification</p>
+            </div>
+
+            <p class="post__text">Meanwhile, I was reintroduced to the intrusive advertising for applications Microsoft
+                has partnered with as well as their own. I got the usual two different points where Microsoft pushed
+                Edge when trying to download Chrome. Search for Chrome and the search will push Edge. Try to download
+                Chrome and there is another pop-up. I also got ads for ‘Shopping on Edge’ with discounts when using it
+                and I got an ad for free gift cards through Microsoft Rewards. If there was ever a reason to not want to
+                use
+                Edge as a browser, Microsoft shoving so many ads into the browser while using it is a great reason. I am
+                sure
+                there is a way to turn it off, but rather than search for a way to do that, I will just use Firefox.
+            </p>
+            <div class="post__img-container--full">
+                <img src="images/Screenshot (42).png" alt="Windows 10 Edge Shopping ad" class="post__image--full">
+                <p class="post__img-caption">Windows 10 Edge Shopping ad</p>
+            </div>
+            <div class="post__img-container--full">
+                <img src="images/Screenshot (43).png" alt="Bing Search Edge ad" class="post__image--full">
+                <p class="post__img-caption">Bing search Edge ad</p>
+            </div>
+            <div class="post__img-container--full">
+                <img src="images/Screenshot (44).png" alt="Edge ad" class="post__image--full">
+                <p class="post__img-caption">Edge ad</p>
+            </div>
+            <div class="post__img-container--full">
+                <img src="images/Screenshot (50).png" alt="Xbox ad" class="post__image--full">
+                <p class="post__img-caption">Xbox ad</p>
+            </div>
+            <p class="post__text">The other area is the start menu. There are a series of applications which are not
+                technically installed until you click on them. So, if you are someone that uses the start menu, as I am,
+                or just someone that wants it to look clean, you have to go through the process of deleting all of
+                these. But it is worse, because post the upgrade to Windows 11, a bunch of applications are back. Again,
+                I have to remove applications from the start menu.</p>
+
+
+            <p class="post__text">In the end, this laptop is primarily for gaming, and I will do very little browsing
+                while using it. I am glad that I am not using Windows regularly for anything. While Windows 11 is nice
+                to look at it, it is still Windows.
+            </p>
+
+        </div>
+    </section>
+
+    <!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+    <footer class="footer">
+        <div class="footer__contact">
+            <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+            <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+        </div>
+        <br>
+        <div class="row">
+            <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+        </div>
+
+    </footer>
+
+    <script src="./js/index.js">        </script>
+
+
+
+</body>
+
+
+<!-- 
+        <p class="post__text post__text--full"></p>
+        <p class="post__text post__text--full"></p>  
+     -->
+
+</html>
