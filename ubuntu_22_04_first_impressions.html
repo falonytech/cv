@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Ubuntu:100,200,300,400,500&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+        <title>Falony Tech</title>
+    </head>
+
+	<body class="bloglist--container">
+<!---------------------------------HEADER-------------------------------------------------------------------------------------------------------->
+<header class="header">
+    <a class="header__link" href="index.html">
+        <div class="header__title">
+            <h1>FalonyTech</h1>
+        </div>
+    </a>
+
+    
+    <nav class="header__nav">
+        <ul class="header__list">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Posts</a></li>
+            <li><a href="distro.html" class="actv">Distro</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https:\\nicholasfalony.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav class="mobile__nav">
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="blog.html">Blog Posts</a>
+                <a href="distro.html">Distro</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="https:\\nicholasfalony.com">Contact</a>
+            </div>
+          </div>
+        
+    </nav>
+</header>
+
+
+<!---------------------------------POST-------------------------------------------------------------------------------------------------------->
+
+        <section class="post">
+            <div class="post__title">
+                <h3 class="post__title--heading">Ubuntu 22.04 LTS First Impressions</h3>
+                <h5 class="post__title--subhead">May 9, 2022</h5>
+            </div>
+
+            <div class="post__content">
+
+                <div class="">
+                    <img src="images/ubuntu-22-04-desktop.png" alt="Ubuntu 22.04 desktop" class="post__image--full">
+                    <p class="post__img-caption">Ubuntu 22.04 desktop</p>
+                </div>
+                
+                <p class="post__text">
+                    Yes, I have already switched back to Ubuntu and away from Fedora 35 KDE, and there are a couple of reasons why. First, this is a brand new LTS 
+                    version of Ubuntu, meaning that they have refined the Ubuntu version of the Gnome interface with performance enhancements and stylistic changes 
+                    that would make it the best version of the interface. As they move along to the next releases, there usually are some changes made that make it 
+                    feel a little less polished to me because they are trying new things out. And LTS is not that and should be the most stable of the releases that 
+                    they have until the next LTS. Second, Ubuntu just feels like home, as does Gnome. And while I really liked KDE and Fedora, there are just some 
+                    things that I run into that I do not like.
+                </p>
+                <p class="post__text post__text--full">
+                    KDE has had update issues with for me related a conflict with the Plasma theme. While I have only experienced this on my desktop, which is also 
+                    running Fedora 35 KDE, and on the Pinebook Pro running Manjaro KDE, it is still concerning. I have not done extensive research on what is causing 
+                    this, but the limited research that I did on it suggested that I should just not install those particular packages. This is not really ideal and 
+                    not a great user experience. 
+                </p>
+                <p class="post__text post__text--full">
+                    So I have installed Ubuntu again, and I have only been playing around with it for a little while. Thus far  what I have noticed the most is the 
+                    subtle refinement of the animations and theme. The Yaru theme looks very crisp. By default the system was installed with the light theme. I have 
+                    briefly looked at the light theme and know that it is not for me, but it looks great too. I quickly changed to the dark theme and miss the older 
+                    hybrid theme that mixed both light and dark. The icon set continues to look great and this is the first time in a while where I would like to keep 
+                    the default wallpaper for a while.   
+                </p>
+                <div class="">
+                    <img src="images/ubuntu-22-04-appearance-settings.png" alt="Ubuntu Appearance Settings" class="post__image--full">
+                    <p class="post__img-caption">Ubuntu Appearance Settings</p>
+                </div>
+                <p class="post__text post__text--full">
+                    What has stood out to me the most are the animations. They are very quick and smooth. The whole system feels super snappy and are a great cue to 
+                    what is happening. Take the minimizing effect on windows. They float left into the dock and the animation slows down as it gets close to the dock 
+                    itself. The animation into the task overview is fast and smooth, zooming out with a little bounce. Desktop switching is fast and smooth as well, 
+                    and can easily be done now with a three finger swipe. 
+                </p>
+                <p class="post__text post__text--full">
+                    Speaking of three finger swipe, this latest version of Ubuntu has brought additional support for gestures. Three finger swipe to the left or right 
+                    will switch between desktops. Three finger swipe up from the bottom will activate the task overview, and then three fingers down to return to the 
+                    desktop. I don’t think that I enjoy the animation when using the gestures as much as using the super key. If not swiping fast enough, the animation 
+                    stutters. But having some of the more advanced animations that I have used on MacOS is nice. 
+                </p>
+                <div class="">
+                    <img src="images/ubuntu-22-04-task-overview.png" alt="Ubuntu Task Overview" class="post__image--full">
+                    <p class="post__img-caption">Ubuntu Task Overview</p>
+                </div>
+                <p class="post__text post__text--full">
+                    To be clear though, much of the gesture functionality comes from Gnome itself, and not Ubuntu. It is great to have, but this is an improvement brought 
+                    about by the DE it uses, and is not something that would universally be in every Ubuntu flavor. 
+                </p>
+
+                <h3 class="post__sub-title">Applications</h3>
+                <p class="post__text post__text--full">
+                    Applications is an area where I continue to be disappointed in Ubuntu and Canonical. First I will start out with the normal. The full, normal list of 
+                    applications are there. Firefox is the default browser, Nautilus the file manager, the Ubuntu Software Center is there, Libre Office, Rhythm Box, 
+                    Transmission, etc. If you have used Ubuntu in the past several years, you will be instantly familiar with their choices of applications.   
+                </p>
+                <p class="post__text post__text--full">
+                    I went about installing some key applications that I always need including VSCode, Chrome, VLC, and Gparted. VSCode and Chrome I installed through deb 
+                    packages from their respective sites. I installed the others through the store, which was quick and easy.  
+                </p>
+
+                <p class="post__text post__text--full">
+                    The concern I have with Ubuntu is that Canonical has decided to continue its push towards Snaps being the default for everything. And by default, 
+                    the regular repositories are deactivated, so everything you install will be a Snap by default, even if you would rather get the deb package. And you 
+                    cannot even select the deb package unless you go into the options and activate those repositories. This is incredibly user hostile.   
+                </p>
+                <p class="post__text post__text--full">
+                    I understand that a normal user will likely not care or even know the difference. But many Ubuntu users do know the difference and prefer the deb 
+                    packages. While normal users probably would not change the source at all, making it hidden from selection without a change in a setting, which is in 
+                    the updater application. By default the Software Store, Firefox, and others are Snaps. I went about uninstalling Firefox as a Snap, activating the deb 
+                    repositories, and then installing Firefox as a deb.  
+                </p>
+                <h3 class="post__sub-title">Other Thoughts</h3>
+                <p class="post__text post__text--full">I am a fan of the ability to change the highlight color and how it cascades through the system. Fractional scaling 
+                    is now built into the system, which is great for my laptop as the 14” screen is 2k and I need to scale, but 200% is too much. The installation itself 
+                    is the same as it has been for years. Ubuntu’s installer is very easy to use and I am glad they have not changed it. 
+                </p>
+                <p class="post__text post__text--full">
+                    I also have noticed that if an application is on the dock, then it does not appear in the application menu, and vice versa. This makes sense, but can 
+                    be a little confusing if you do not realize this and are already in the application menu. It is a quick mental note though and I understand what is 
+                    happening.   
+                </p>
+                <div class="">
+                    <img src="images/ubuntu-22-04-applications-menu.png" alt="Ubuntu Application Menu" class="post__image--full">
+                    <p class="post__img-caption">Ubuntu Application Menu</p>
+                </div>
+                <p class="post__text post__text--full">
+                    There is another small issue that has popped up as I start to connect the laptop to my dock and an external monitor. When I first connected my laptop 
+                    to the external monitor, I expected to have to change the displays around. I moved the laptop display to show left of the external display, and set up 
+                    the external display as the primary display. I had to change the scaling of the laptop display back to 150% because for some reason it switched to 200%. 
+                    When reconnecting the laptop to the dock a second time I had to go through almost every step again, except the option to show the dock on all screens. 
+                    This is a little irritating as I would hope that these settings are saved and remembered by the system. It has previously. I will continue to test this 
+                    functionality and see if this is consistent. 
+                </p>
+                <div class="">
+                    <img src="images/ubuntu-22-04-display-settings.png" alt="Ubuntu Display Settings" class="post__image--full">
+                    <p class="post__img-caption">Ubuntu Display Settings</p>
+                </div>
+                <p class="post__text post__text--full">
+                    Overall, this is a great OS, and I am going to try to keep my laptop on the LTS for the next couple of years. It works, I have everything working the 
+                    way I like and I have my coding projects set up the way I need them to be. I will likely have my desktop on the faster channel so I can continue to test 
+                    it out and see what the future versions bring.
+                </p>
+
+
+            </div>
+        </section>
+
+<!---------------------------------FOOTER-------------------------------------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__contact">
+                <a href="https://www.linkedin.com/in/nicholas-falony-8329126/" class="footer__contact--link">LinkedIn</a>
+                <a href="https://nicholasfalony.com" class="footer__contact--link">Personal Site</a>
+            </div>
+            <br>
+            <div class="row">
+                <p class="footer__copyright">Copyright &copy; 2019 Nicholas Falony</p>
+            </div>
+
+        </footer>
+        <script src="./js/index.js">        </script>
+
+
+
+
+    </body>
+
+
+    <!-- 
+         <p class="post__text post__text--right"></p>
+         <p class="post__text post__text--left"></p>
+        <p class="post__text post__text--full"></p>
+        <p class="post__text"></p>  
+
+        <div class="">
+            <img src="images/" alt="" class="post__image--full">
+            <p class="post__img-caption"></p>
+        </div>
+        
+        <h3 class="post__sub-title">Installation</h3>
+     -->
+
+</html>
