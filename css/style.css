@@ -464,7 +464,8 @@ body {
         margin-left: 2rem;
         margin-right: 2rem; } }
   .distro__button {
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    margin-bottom: 3rem; }
   .distro__button:link, .distro__button:visited {
     font-size: 1.9rem;
     text-decoration: none;
@@ -626,6 +627,12 @@ body {
         margin-bottom: 2.5rem; } }
   .post__references {
     margin-top: 6rem; }
+  .post__img-photo-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .post__img-photo-grid__1 {
+      justify-content: center; }
 
 .post__img-caption {
   font-size: 1.2rem;
@@ -704,6 +711,9 @@ body {
   font-family: 'Courier New', Courier, monospace;
   color: #494848;
   background-color: #b3b3b3; }
+
+.phone-screenshot {
+  width: 350px; }
 
 .bloglist--container {
   display: grid;
